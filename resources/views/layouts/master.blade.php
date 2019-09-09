@@ -127,11 +127,11 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="{{route('category.index')}}"><i class="fas fa-list"></i> <span>Categories</span></a></li>
-        <li class="active"><a href="{{route('formation.index')}}"><i class="fas fa-file"></i> <span>Formations</span></a></li>
-        <li class="active"><a href="{{route('professor.index')}}"><i class="fas fa-user-tie"></i> <span>Professors</span></a></li>
-        <li class="active"><a href="{{route('student.index')}}"><i class="fas fa-users"></i> <span>Students</span></a></li>
-        <li class="active"><a href="{{url('classroom')}}"> <i class="fas fa-door-closed"></i><span>Classrooms</span></a></li>
+        <li class="active"><a href="{{route('category.index')}}"><i class="fas fa-fw fa-folder"></i> <span>Categories</span></a></li>
+        <li class="active"><a href="{{route('formation.index')}}"><i class="fas fa-fw fa-book"></i> <span>Formations</span></a></li>
+        <li class="active"><a href="{{route('professor.index')}}"><i class="fas fa-fw fa-chalkboard-teacher"></i> <span>Professors</span></a></li>
+        <li class="active"><a href="{{route('student.index')}}"><i class="fas fa-fw fa-user-graduate"></i> <span>Students</span></a></li>
+        <li class="active"><a href="{{url('classroom')}}"> <i class="fas fa-fw fa-chalkboard"></i> <span>Classrooms</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>
