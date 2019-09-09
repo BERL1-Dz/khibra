@@ -18,7 +18,7 @@ class CreatePaymentProfessorsTable extends Migration
             $table->dateTime('date');
             $table->double('amount');
             $table->integer('formation_id')->nullable();
-            $table->integer('professor_id');
+            $table->integer('professor_id')->unsigned();
             $table->string('des')->nullable();
             $table->timestamps();
         });

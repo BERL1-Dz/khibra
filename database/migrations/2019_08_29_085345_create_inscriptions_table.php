@@ -15,8 +15,8 @@ class CreateInscriptionsTable extends Migration
     {
         Schema::create('inscriptions', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('student_id');
-            $table->integer('session_id');
+            $table->integer('student_id')->unsigned();
+            $table->integer('session_id')->unsigned();
             $table->date('date');
             $table->string('state');
             $table->integer('amount');

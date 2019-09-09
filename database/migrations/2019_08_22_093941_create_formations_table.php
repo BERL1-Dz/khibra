@@ -19,7 +19,7 @@ class CreateFormationsTable extends Migration
         $table->string('image')->nullable();
         $table->integer('price');
         $table->integer('durations');
-        $table->integer('category_id');
+        $table->integer('category_id')->unsigned();
         $table->timestamps();
         });
     }

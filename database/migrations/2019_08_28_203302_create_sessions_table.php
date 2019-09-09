@@ -18,9 +18,9 @@ class CreateSessionsTable extends Migration
             $table->date('start_date');
             $table->date('end_date');
             $table->integer('nbr_students');
-            $table->integer('formation_id');
+            $table->integer('formation_id')->unsigned();
             $table->string('state');
-            $table->integer('profe_id');
+            $table->integer('profe_id')->unsigned();
             $table->timestamps();
         });
     }
