@@ -1,7 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
+use App\Professor;
+use App\Formation;
+use App\Student;
 use App\Session;
 use Illuminate\Http\Request;
 
@@ -14,7 +17,8 @@ class SessionController extends Controller
      */
     public function index()
     {
-        //
+        $sessions = Session::all();
+        $return view('session.index' compact('sessions','formations','students','professors'))
     }
 
     /**

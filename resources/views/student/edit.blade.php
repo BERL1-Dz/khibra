@@ -4,7 +4,7 @@
   <div class="card mb-3">
     <div class="card-header">
 
-            <h3><i class="fas fa-folder"></i> Edit Student</h3>
+            <h3><i class="fas fa-fw fa-user-graduate"></i> Edit Student</h3>
     </div>
     <div class="card-body">
       <form method="POST" enctype="multipart/form-data" action="{{ route('student.update',$student->id) }}" class="form-horizontal">

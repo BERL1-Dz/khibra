@@ -5,7 +5,7 @@
 	<div class="card mb-3">
 		<div class="card-header">
 
-            <h3><i class="fas fa-folder"></i> Edit Category</h3>
+            <h3><i class="fas fa-fw fa-folder"></i> Edit Category</h3>
 		</div>
 		<div class="card-body">
 			<form method="POST" enctype="multipart/form-data" action="{{ route('category.update',$category->id) }}" class="form-horizontal">
