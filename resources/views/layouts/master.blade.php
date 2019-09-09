@@ -131,7 +131,8 @@
         <li class="active"><a href="{{route('formation.index')}}"><i class="fas fa-fw fa-book"></i> <span>Formations</span></a></li>
         <li class="active"><a href="{{route('professor.index')}}"><i class="fas fa-fw fa-chalkboard-teacher"></i> <span>Professors</span></a></li>
         <li class="active"><a href="{{route('student.index')}}"><i class="fas fa-fw fa-user-graduate"></i> <span>Students</span></a></li>
-        <li class="active"><a href="{{url('classroom')}}"> <i class="fas fa-fw fa-chalkboard"></i> <span>Classrooms</span></a></li>
+        <li class="active"><a href="{{route('classroom.index')}}"> <i class="fas fa-fw fa-chalkboard"></i> <span>Classrooms</span></a></li>
+
       </ul>
       <!-- /.sidebar-menu -->
     </section>

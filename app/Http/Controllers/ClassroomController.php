@@ -66,7 +66,8 @@ class ClassroomController extends Controller
      */
     public function edit(Classroom $classroom)
     {
-        //
+        $classroom = Classroom::find($classroom->id);
+        return view('classroom.edit',compact('classroom'));
     }
 
     /**
@@ -78,7 +79,13 @@ class ClassroomController extends Controller
      */
     public function update(Request $request, Classroom $classroom)
     {
-        //
+        $classroom->name = request('name');
+        $classroom->capacity = request('capacity');
+        $classroom->description = request('description');
+
+        $classroom->save();
+        return redirect()->route('classroom.index');
+        
     }
 
     /**

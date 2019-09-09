@@ -25,8 +25,8 @@ class CategoryController extends Controller
         $categories = DB::table('categories')->paginate(5);
         return view('category.index',compact('categories'));
        */
-        //$categories = DB::table('categories')->paginate(5);
-        $categories = Category::all();
+        $categories = DB::table('categories')->paginate(5);
+        //$categories = Category::all();
         return view('category.index',compact('categories'));
         
     }
@@ -40,7 +40,7 @@ class CategoryController extends Controller
     {
         
     }
-    /*
+    
     public function search(Request $request)
     {
         
@@ -49,7 +49,7 @@ class CategoryController extends Controller
         return view('category.index', ['categories' => $categories]);
         
     }
-    */
+    
 
     /**
      * Store a newly created resource in storage.
