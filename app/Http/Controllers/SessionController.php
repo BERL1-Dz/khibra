@@ -18,7 +18,7 @@ class SessionController extends Controller
     public function index()
     {
         $sessions = Session::all();
-        $return view('session.index' compact('sessions','formations','students','professors'))
+        return view('session.index', compact('sessions'));
     }
 
     /**

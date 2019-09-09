@@ -20,6 +20,7 @@
   <script src="{{asset('bower_components/sweetalert2/dist/sweetalert2.min.js')}}"></script>
   <link rel="stylesheet" href="{{asset('bower_components/sweetalert2/dist/sweetalert2.min.css')}}">
   <link rel="stylesheet" href="{{asset('dist/css/skins/skin-blue.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('css/all.min.css')}}">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 <script src="{{asset('https://kit.fontawesome.com/7950fee4f9.js')}}"></script>
 
