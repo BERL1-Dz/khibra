@@ -43,7 +43,7 @@
           <a href="{{route('category.edit', $category->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
           </a>
 
-          <a href="#" class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target="#show"><i class="fa fa-eye" aria-hidden="true"></i></a>
+          <a href="{{route('category.show', $category->id)}}"  class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target="#show"><i class="fa fa-eye" aria-hidden="true"></i></a>
 
            <form method="POST" action="{{ route('category.destroy', $category->id) }}">
             @csrf 
@@ -103,16 +103,13 @@
   </div>
 </div>
 
-
-
-
 <!--Show-->
 <div class="modal fade bd-example-modal-lg" id="show" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">{{$category->id}}</h4>
+      <h4 class="modal-title" id="myModalLabel">{{$category->name}}</h4>
       </div>
       <div class="modal-body">
         @include('category.show')
@@ -120,4 +117,7 @@
     </div>
   </div>
 </div>
+
+
+
 @endsection

@@ -85,7 +85,9 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-         
+
+        $category = Category::find($id);
+        return back();
     }
 
     /**
@@ -96,7 +98,7 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        
+    
         $category = Category::find($category->id);
         return view('category.edit',compact('category'));
         

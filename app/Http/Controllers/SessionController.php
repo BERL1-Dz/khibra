@@ -18,7 +18,10 @@ class SessionController extends Controller
     public function index()
     {
         $sessions = Session::all();
-        return view('session.index', compact('sessions'));
+        $formations = Formation::all();
+        $professors = Professor::all();
+        $students = Student::all();
+        return view('session.index', compact('sessions', 'students',      'formations','professors'));
     }
 
     /**
@@ -39,7 +42,9 @@ class SessionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->all());
+        $session = new Session();
+        
     }
 
     /**

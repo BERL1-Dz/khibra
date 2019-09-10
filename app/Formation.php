@@ -11,4 +11,9 @@ class Formation extends Model
     		return $this->belongsTo("App\Category");
     	}
     protected $fillable =['name','price','durations','category_id'];
+
+    function session()
+    	{
+    		return $this->belongsTo("App\Formation");
+    	}
 }

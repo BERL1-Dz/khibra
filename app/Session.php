@@ -11,5 +11,10 @@ class Session extends Model
     		return $this->belongsTo("App\Professor");
     	}
 
-    
+    function Formation()
+    	{
+    		return $this->belongsTo("App\Formation");
+    	}
+
+  
 }

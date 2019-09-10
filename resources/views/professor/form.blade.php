@@ -16,5 +16,4 @@
       Description:
       <textarea name="description"  cols="15" rows="8" class="form-control">
       </textarea>
-       <br/>
       </div>
