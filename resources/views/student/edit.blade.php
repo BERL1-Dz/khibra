@@ -3,34 +3,33 @@
 <div class="container-fluid">
   <div class="card mb-3">
     <div class="card-header">
-
-            <h3><i class="fas fa-fw fa-user-graduate"></i> Edit Student</h3>
+      <h3><i class="fas fa-fw fa-chalkboard"></i> Edit Student</h3>
     </div>
-    <div class="card-body">
-      <form method="POST" enctype="multipart/form-data" action="{{ route('student.update',$student->id) }}" class="form-horizontal">
-        {{method_field('PATCH')}}
-        @csrf
-        Firstname:
+
+  </div>
+  <div class="card-body">
+    <form method="POST" enctype="multipart/form-data" action="{{ route('student.update',$student->id) }}" class="form-horizontal">
+      {{method_field('PATCH')}}
+      @csrf
+      Firstname:
         <input type="text" name="firstname" value="{{$student->firstname}}" class="form-control" placeholder="" />
         <br/>
-        Lastname:
+      Lastname:
         <input type="text" name="lastname" value="{{$student->lastname}}" class="form-control" placeholder="" />
         <br/>
-        Gender:
+      Gender:
        <select name="gender"  class="form-control">
             <option value="">Choose</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
             <option value="Other">Other</option>
       </select>
-      <br/>
-      <form class="form-group">
+        <br/>
         Birthday:
          <br/>
-       <input type="date" name="birthday">
+       <input type="date" class="form-control" name="birthday">
         <br/>
-      </form>
-      <br/>
+
       Phone:
       <input type="tel" name="phone" value="{{$student->phone}}" class="form-control" placeholder="" />
       <br/>
@@ -50,13 +49,11 @@
       </select>
       <br/>
       <div class="card-footer">
-            
-      </div>
-       
-      </form>
-      
-    </div>
+             <button type="submit" class="btn btn-primary">Save Changes</button>
+             </div>
+    </form>
   </div>
 </div>
+ 
 
 @endsection

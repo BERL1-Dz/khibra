@@ -43,21 +43,15 @@
             <td>{{$formation->durations}}</td>
             <td><div class="row">
 
-          <a href="{{route('formation.edit', $formation->id)}}" class="btn btn-info">
-          <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
-              <span>Edit</span>            
+          <a href="{{route('formation.edit', $formation->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
           </a>
-           <a href="#" class="btn btn-warning">
-              <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
-              <span><strong>View</strong></span>            
-          </a>
-           <a href="#" class="btn btn-danger a-btn-slide-text">
-          <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-              <span>Delete</span>            
-          </a>
-            </div></td>
-          </tr>
-           
+           <a href="{{route('formation.show', $formation->id)}}"  class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target="#show"><i class="fa fa-eye" aria-hidden="true"></i></a>
+
+          <form method="POST" action="{{ route('formation.destroy', $formation->id) }}">
+            @csrf 
+           {{ method_field('DELETE') }}
+           <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn btn-danger btn-bordred wave-light"><i class="fa fa-times"></i></button>
+          </form>
            @endforeach
 
         </table>

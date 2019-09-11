@@ -9,5 +9,5 @@ class Student extends Model
 	 function presences(){
         return $this->hasMany('App\Presence');
     }
-    
+
 }
