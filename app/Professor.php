@@ -8,6 +8,6 @@ class Professor extends Model
 {
     function session()
     	{
-    		return $this->hasMany("App\Professor");
+    		return $this->hasMany("App\Session");
     	}
 }
