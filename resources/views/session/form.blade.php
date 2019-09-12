@@ -10,7 +10,7 @@
 
 	Formation:
 	
-	<select class="form-control" name="">
+	<select class="form-control" name="formation_id">
 		@foreach($formations as $formation)
 		<option value="{{$formation->id}}">{{$formation->name}}</option>
 		@endforeach
@@ -19,7 +19,7 @@
 	<br/>
 
 	Professor:
-	<select class="form-control" name="">
+	<select class="form-control" name="prof_id">
 		@foreach($professors as $professor)
 		<option value="{{$professor->id}}">{{$professor->name}}</option>
 		@endforeach
@@ -27,5 +27,7 @@
 
 	<br/>
 
+	# Max:
+	<input class="form-control" type="number" name="std_nbr"  value="">
 
 </div>

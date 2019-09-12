@@ -42,8 +42,16 @@ class SessionController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        //dd($request->all());
         $session = new Session();
+        $session->start_date = request('start_date');
+        $session->end_date = request('end_date');
+        $session->formation_id = request('formation_id');
+        $session->profe_id = request('profe_id');
+        $session->nbr_students = request('nbr_students');
+
+        $session->save();
+
         
     }
 
