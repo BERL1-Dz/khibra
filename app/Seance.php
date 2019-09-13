@@ -15,7 +15,7 @@ class Seance extends Model
 	}
 
 	function session(){
-		return $this->belongsTo('App\Session');
-	}
+        return $this->belongsTo('App\Session');
+    }
     
 }

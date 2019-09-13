@@ -40,7 +40,7 @@
             <!--<td><img src="{{asset('storage/uploads/'.$category->image)}}" width="80px" height="80px"></td>-->
             <td>
               <div class="row">
-          <a href="{{route('category.edit', $category->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+          <a href="{{route('category.edit', $category->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>
           </a>
 
           <a href="{{route('category.show', $category->id)}}"  class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target="#show"><i class="fa fa-eye" aria-hidden="true"></i></a>

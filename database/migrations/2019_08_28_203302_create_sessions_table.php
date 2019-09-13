@@ -15,12 +15,12 @@ class CreateSessionsTable extends Migration
     {
         Schema::create('sessions', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('nbr_max')->nullable();
+            $table->integer('formation_id');
             $table->date('start_date');
-            $table->date('end_date');
-            $table->integer('nbr_students');
-            $table->integer('formation_id')->unsigned();
-            $table->string('state')->nullable();
-            $table->integer('profe_id')->unsigned()->nullable();
+            $table->date('end_date')->nullable();
+            $table->integer('status')->nullable();
+            $table->integer('prof_id');
             $table->timestamps();
         });
     }

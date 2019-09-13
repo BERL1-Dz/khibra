@@ -1,14 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
-use App\Professor;
-use App\Formation;
-use App\Student;
-use App\Session;
+
+use App\Enrollment;
 use Illuminate\Http\Request;
 
-class SessionController extends Controller
+class EnrollmentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,11 +14,7 @@ class SessionController extends Controller
      */
     public function index()
     {
-        $sessions = Session::all();
-        $formations = Formation::all();
-        $professors = Professor::all();
-        $students = Student::all();
-        return view('session.index', compact('sessions', 'students',      'formations','professors'));
+        //
     }
 
     /**
@@ -42,26 +35,16 @@ class SessionController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request->all());
-        $session = new Session();
-        $session->start_date = request('start_date');
-        $session->end_date = request('end_date');
-        $session->formation_id = request('formation_id');
-        $session->profe_id = request('profe_id');
-        $session->std_nbr = request('std_nbr');
-
-        $session->save();
-
-        
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Session  $session
+     * @param  \App\Enrollment  $enrollment
      * @return \Illuminate\Http\Response
      */
-    public function show(Session $session)
+    public function show(Enrollment $enrollment)
     {
         //
     }
@@ -69,10 +52,10 @@ class SessionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Session  $session
+     * @param  \App\Enrollment  $enrollment
      * @return \Illuminate\Http\Response
      */
-    public function edit(Session $session)
+    public function edit(Enrollment $enrollment)
     {
         //
     }
@@ -81,10 +64,10 @@ class SessionController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Session  $session
+     * @param  \App\Enrollment  $enrollment
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Session $session)
+    public function update(Request $request, Enrollment $enrollment)
     {
         //
     }
@@ -92,10 +75,10 @@ class SessionController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Session  $session
+     * @param  \App\Enrollment  $enrollment
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Session $session)
+    public function destroy(Enrollment $enrollment)
     {
         //
     }

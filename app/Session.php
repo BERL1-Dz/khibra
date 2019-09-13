@@ -16,6 +16,13 @@ class Session extends Model
     		return $this->belongsTo("App\Formation");
     	}
     	
+    	 function seances(){
+        return $this->hasMany('App\Seance');
+    }
+
+    
+   
+
 
   
 }
