@@ -23,6 +23,7 @@
   <link rel="stylesheet" type="text/css" href="{{asset('css/all.min.css')}}">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 <script src="{{asset('https://kit.fontawesome.com/7950fee4f9.js')}}"></script>
+    <script src="folders/node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
