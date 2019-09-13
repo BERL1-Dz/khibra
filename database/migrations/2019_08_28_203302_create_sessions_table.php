@@ -18,7 +18,7 @@ class CreateSessionsTable extends Migration
             $table->integer('nbr_max')->nullable();
             $table->integer('formation_id');
             $table->date('start_date');
-            $table->date('end_date')->nullable();
+            $table->date('end_date');
             $table->integer('status')->nullable();
             $table->integer('prof_id');
             $table->timestamps();
