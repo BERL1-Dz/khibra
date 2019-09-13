@@ -300,10 +300,10 @@
                             <div class="col-md-6 animate" data-animate="fadeInUp">
                                 <form id="ajax-contact" method="post" action="#">
                                     <div class="input-field">
-                                        <input type="text" class="form-control" name="nom" id="nom" required placeholder="Name">
+                                        <input type="text" class="form-control" name="name" id="nom" required placeholder="Nom">
                                     </div>
                                     <div class="input-field">
-                                        <input type="email" class="form-control" name="e-mail" id="email" required placeholder="Email">
+                                        <input type="email" class="form-control" name="email" id="email" required placeholder="E-mail">
                                     </div>
                                     <div class="input-field">
                                         <textarea class="form-control" name="message" id="message" required placeholder="Message"></textarea>
