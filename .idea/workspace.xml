@@ -4,6 +4,12 @@
     <list default="true" id="294e259f-9e56-421d-a35c-70a31168174f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/resources/views/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blde.php" beforeDir="false" />
+>>>>>>> 0530d97e0a59501f4faf65a9c4859d523e0c0daf
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +27,7 @@
     <favorites_list name="khibra-platfrom" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
@@ -45,6 +52,14 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
               <caret line="25" column="88" selection-start-line="25" selection-start-column="88" selection-end-line="25" selection-end-column="88" />
+=======
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+>>>>>>> 0530d97e0a59501f4faf65a9c4859d523e0c0daf
             </state>
           </provider>
         </entry>
@@ -55,6 +70,8 @@
     <findStrings>
       <find>slide01</find>
       <find>slide05</find>
+      <find>fullclip</find>
+      <find>fullpage</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,6 +208,7 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
             <path>
               <item name="khibra-platfrom" type="b2602c69:ProjectViewProjectNode" />
               <item name="khibra-platfrom" type="462c0819:PsiDirectoryNode" />
@@ -198,6 +216,8 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
+=======
+>>>>>>> 0530d97e0a59501f4faf65a9c4859d523e0c0daf
           </expand>
           <select />
         </subPane>
@@ -252,8 +272,13 @@
       <workItem from="1568043723335" duration="1181000" />
       <workItem from="1568106490690" duration="866000" />
       <workItem from="1568363132547" duration="1211000" />
+<<<<<<< HEAD
       <workItem from="1568364693737" duration="3093000" />
       <workItem from="1568371968292" duration="1021000" />
+=======
+      <workItem from="1568364693737" duration="3817000" />
+      <workItem from="1568394230579" duration="985000" />
+>>>>>>> 0530d97e0a59501f4faf65a9c4859d523e0c0daf
     </task>
     <task id="LOCAL-00001" summary="new berlin">
       <created>1568044199263</created>
@@ -276,6 +301,7 @@
       <option name="project" value="LOCAL" />
       <updated>1568366502657</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00004" summary="Config Font Awsome">
       <created>1568372304235</created>
       <option name="number" value="00004" />
@@ -288,17 +314,42 @@
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="7387000" />
+=======
+    <task id="LOCAL-00004" summary="New Edit Part Contact Us">
+      <created>1568371446853</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1568371446853</updated>
+    </task>
+    <task id="LOCAL-00005" summary="New Edit Part Contact Us 2">
+      <created>1568371601552</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1568371601552</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8075000" />
+>>>>>>> 0530d97e0a59501f4faf65a9c4859d523e0c0daf
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978261" visible="true" weight="0.21418338" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978261" visible="true" weight="0.21409395" />
+>>>>>>> 0530d97e0a59501f4faf65a9c4859d523e0c0daf
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.5021739" side_tool="true" weight="0.21140939" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -307,7 +358,11 @@
       <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.339213" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49932885" weight="0.3229308" />
+=======
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49932885" visible="true" weight="0.32352942" />
+>>>>>>> 0530d97e0a59501f4faf65a9c4859d523e0c0daf
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -363,8 +418,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new berlin" />
     <MESSAGE value="Add New Home Page" />
+<<<<<<< HEAD
     <MESSAGE value="Config Font Awsome" />
     <option name="LAST_COMMIT_MESSAGE" value="Config Font Awsome" />
+=======
+    <MESSAGE value="New Edit Part Contact Us" />
+    <MESSAGE value="New Edit Part Contact Us 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Edit Part Contact Us 2" />
+>>>>>>> 0530d97e0a59501f4faf65a9c4859d523e0c0daf
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.env.example">
@@ -389,13 +450,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="88">
+=======
+        <state relative-caret-position="104">
+>>>>>>> 0530d97e0a59501f4faf65a9c4859d523e0c0daf
           <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="484">
           <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="88" />
         </state>
@@ -405,6 +471,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="25" column="88" selection-start-line="25" selection-start-column="88" selection-end-line="25" selection-end-column="88" />
+=======
+        <state relative-caret-position="234">
+          <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+>>>>>>> 0530d97e0a59501f4faf65a9c4859d523e0c0daf
         </state>
       </provider>
     </entry>

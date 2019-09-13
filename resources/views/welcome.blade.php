@@ -27,8 +27,6 @@
 
     <link rel="stylesheet" href="folders/css/responsive.css">
 
-    <script src="folders/src/fullclip.js"></script>
-
     <script src="folders/node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
 
     <script src="folders/node_modules/jquery/dist/jquery.slim.min.js"></script>
