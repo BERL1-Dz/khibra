@@ -113,28 +113,28 @@
         </div>
       </div>
 
-      <!-- search form (Optional) -->
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-          <span class="input-group-btn">
-              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-              </button>
-            </span>
-        </div>
-      </form>
-      <!-- /.search form -->
-
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="{{route('category.index')}}"><i class="fas fa-fw fa-folder"></i> <span>Categories</span></a></li>
-        <li class="active"><a href="{{route('formation.index')}}"><i class="fas fa-fw fa-book"></i> <span>Formations</span></a></li>
-        <li class="active"><a href="{{route('professor.index')}}"><i class="fas fa-fw fa-chalkboard-teacher"></i> <span>Professors</span></a></li>
-        <li class="active"><a href="{{route('student.index')}}"><i class="fas fa-fw fa-user-graduate"></i> <span>Students</span></a></li>
-        <li class="active"><a href="{{route('classroom.index')}}"> <i class="fas fa-fw fa-chalkboard"></i> <span>Classrooms</span></a></li>
-        <li class="active"><a href="{{route('session.index')}}"> <i class="fas fa-fw fa-school"></i> <span>Sessions</span></a></li>
+        <li class=""><a href="{{route('category.index')}}"><i class="fas fa-fw fa-folder"></i> <span>Categories</span></a></li>
+        <li><a href="{{route('formation.index')}}"><i class="fas fa-fw fa-book"></i> <span>Formations</span></a></li>
+        <li><a href="{{route('professor.index')}}"><i class="fas fa-fw fa-chalkboard-teacher"></i> <span>Professors</span></a></li>
+        <li><a href="{{route('student.index')}}"><i class="fas fa-fw fa-user-graduate"></i> <span>Students</span></a></li>
+        <li><a href="{{route('classroom.index')}}"> <i class="fas fa-fw fa-chalkboard"></i> <span>Classrooms</span></a></li>
+        <li><a href="{{route('session.index')}}"> <i class="fas fa-fw fa-school"></i> <span>Sessions</span></a></li>
+        <li class="treeview">
+          <a href="#"><i  class="fas fa-fw fa-coins"></i> <span>Payments</span>
+            <span class="pull-right-container">
+                <i  class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+
+            <li><a href="{{route('payment.index')}}"><i class="fas fa-fw fa-chalkboard-teacher"></i> Professor Payments</a></li>
+            <li><a href="{{route('payment.index')}}"><i class="fas fa-fw fa-user-graduate"></i> Student Payments</a></li>
+          </ul>
+        </li>
 
       </ul>
       <!-- /.sidebar-menu -->
