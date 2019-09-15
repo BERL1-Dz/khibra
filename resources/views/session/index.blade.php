@@ -46,7 +46,7 @@
 
           <a href="#" class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target="#show"><i class="fa fa-eye" aria-hidden="true"></i></a>
 
-           <form method="POST" action="{{ route('sessions.destroy', $sessions->id) }}">
+           <form method="POST" action="{{ route('sessions.destroy', $sessions->id) }}" style="float: left !important;display: contents;">
             @csrf 
            {{ method_field('DELETE') }}
            <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn btn-danger btn-bordred wave-light"><i class="fa fa-times"></i></button>
