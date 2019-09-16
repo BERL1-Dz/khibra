@@ -1,11 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="294e259f-9e56-421d-a35c-70a31168174f" name="Default Changelist" comment="">
+    <list default="true" id="294e259f-9e56-421d-a35c-70a31168174f" name="Default Changelist" comment="Align Button delete">
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blde.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bower_components/datatables.net/js/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bower_components/datatables.net/js/jquery.dataTables.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/css/flex-slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/css/flex-slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/css/font-awesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/css/fullpage.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/css/fullpage.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/css/owl.carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/css/owl.carousel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/fonts/flexslider-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/fonts/flexslider-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/fonts/slick.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/fonts/slick.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/js/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/js/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/js/fullpage.extensions.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/js/fullpage.extensions.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/js/fullpage.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/js/fullpage.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/js/owl.carousel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/js/scrolloverflow.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/js/scrolloverflow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/all.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/brands.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/brands.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/brands.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/brands.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/regular.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/regular.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/regular.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/regular.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/solid.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/solid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/solid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/solid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/svg-with-js.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/svg-with-js.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/svg-with-js.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/svg-with-js.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/v4-shims.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/v4-shims.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/v4-shims.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/css/v4-shims.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/all.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/brands.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/brands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/brands.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/brands.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/conflict-detection.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/conflict-detection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/conflict-detection.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/conflict-detection.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/regular.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/regular.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/regular.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/regular.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/solid.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/solid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/solid.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/solid.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/v4-shims.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/v4-shims.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/v4-shims.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/js/v4-shims.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_animated.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_animated.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_bordered-pulled.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_bordered-pulled.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_core.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_core.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_fixed-width.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_fixed-width.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_icons.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_larger.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_larger.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_list.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_list.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_mixins.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_rotated-flipped.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_rotated-flipped.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_screen-reader.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_screen-reader.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_shims.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_shims.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_stacked.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_stacked.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/_variables.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/brands.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/brands.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/fontawesome.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/fontawesome.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/regular.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/regular.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/solid.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/solid.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/v4-shims.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/less/v4-shims.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_animated.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_animated.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_bordered-pulled.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_bordered-pulled.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_core.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_fixed-width.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_fixed-width.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_larger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_larger.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_rotated-flipped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_rotated-flipped.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_screen-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_screen-reader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_shims.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_shims.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_stacked.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_stacked.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/brands.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/brands.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/regular.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/regular.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/solid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/solid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/sprites/brands.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/sprites/brands.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/sprites/regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/sprites/regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/sprites/solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/sprites/solid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/svgs/brands/keybase.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/svgs/brands/keybase.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/AUTHORS.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/AUTHORS.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/dist/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/dist/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/dist/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/dist/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/dist/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/dist/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/dist/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/dist/jquery.slim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/dist/jquery.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/dist/jquery.slim.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/external/sizzle/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/external/sizzle/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/external/sizzle/dist/sizzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/external/sizzle/dist/sizzle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/external/sizzle/dist/sizzle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/external/sizzle/dist/sizzle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax/jsonp.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax/jsonp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax/load.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax/load.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax/parseXML.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax/parseXML.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax/var/location.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax/var/location.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax/var/nonce.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax/var/nonce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax/var/rquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax/var/rquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax/xhr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/ajax/xhr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/attributes.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/attributes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/attributes/attr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/attributes/attr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/attributes/classes.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/attributes/classes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/attributes/prop.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/attributes/prop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/attributes/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/attributes/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/attributes/val.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/attributes/val.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/callbacks.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/callbacks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/DOMEval.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/DOMEval.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/access.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/access.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/parseHTML.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/parseHTML.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/ready-no-deferred.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/ready-no-deferred.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/ready.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/ready.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/readyException.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/readyException.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/stripAndCollapse.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/stripAndCollapse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/var/rsingleTag.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/core/var/rsingleTag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/addGetHookIf.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/addGetHookIf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/adjustCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/adjustCSS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/curCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/curCSS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/hiddenVisibleSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/hiddenVisibleSelectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/showHide.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/showHide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/var/cssExpand.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/var/cssExpand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/var/getStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/var/getStyles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/var/isHiddenWithinTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/var/isHiddenWithinTree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/var/rmargin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/var/rmargin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/var/rnumnonpx.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/var/rnumnonpx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/var/swap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/css/var/swap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/data/Data.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/data/Data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/data/var/acceptData.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/data/var/acceptData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/data/var/dataPriv.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/data/var/dataPriv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/data/var/dataUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/data/var/dataUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/deferred.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/deferred.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/deferred/exceptionHook.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/deferred/exceptionHook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/deprecated.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/deprecated.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/dimensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/dimensions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/effects.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/effects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/effects/Tween.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/effects/Tween.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/effects/animatedSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/effects/animatedSelector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/event.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/event.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/event/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/event/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/event/alias.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/event/alias.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/event/focusin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/event/focusin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/event/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/event/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/event/trigger.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/event/trigger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/exports/amd.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/exports/amd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/exports/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/exports/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/_evalUrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/_evalUrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/buildFragment.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/buildFragment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/getAll.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/getAll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/setGlobalEval.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/setGlobalEval.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/var/rcheckableType.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/var/rcheckableType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/var/rscriptType.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/var/rscriptType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/var/rtagName.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/var/rtagName.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/wrapMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/manipulation/wrapMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/offset.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/offset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/queue.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/queue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/queue/delay.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/queue/delay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/selector-native.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/selector-native.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/selector-sizzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/selector-sizzle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/selector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/serialize.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/serialize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/traversing.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/traversing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/traversing/findFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/traversing/findFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/traversing/var/dir.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/traversing/var/dir.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/traversing/var/rneedsContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/traversing/var/rneedsContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/traversing/var/siblings.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/traversing/var/siblings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/ObjectFunctionString.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/ObjectFunctionString.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/arr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/arr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/class2type.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/class2type.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/concat.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/concat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/document.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/documentElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/documentElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/fnToString.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/fnToString.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/getProto.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/getProto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/hasOwn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/hasOwn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/indexOf.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/indexOf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/pnum.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/pnum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/push.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/push.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/rcssNum.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/rcssNum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/rnothtmlwhite.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/rnothtmlwhite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/toString.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/var/toString.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/wrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/node_modules/jquery/src/wrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/src/fullclip.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/src/fullclip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/folders/src/fullclip.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/folders/src/fullclip.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,16 +238,54 @@
       <executable />
     </execution>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="khibra-platfrom" />
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+            <state relative-caret-position="286">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1196">
+              <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/auth/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="86" column="4" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="138" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="111" column="4" selection-start-line="111" selection-start-column="4" selection-end-line="111" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -58,6 +315,22 @@
         <option value="$PROJECT_DIR$/.env.example" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/category/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/classroom/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/formation/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/payment/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/professor/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/session/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/student/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/category/form.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_09_15_091944_create_names_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/login.html" />
+        <option value="$PROJECT_DIR$/resources/views/auth/login.blade1.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/register.blade1.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
       </list>
     </option>
   </component>
@@ -148,10 +421,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="885" />
-    <option name="y" value="125" />
-    <option name="width" value="1020" />
-    <option name="height" value="710" />
+    <option name="x" value="951" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -176,6 +448,20 @@
               <item name="khibra-platfrom" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="khibra-platfrom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="khibra-platfrom" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="khibra-platfrom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="khibra-platfrom" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -232,6 +518,10 @@
       <workItem from="1568363132547" duration="1211000" />
       <workItem from="1568364693737" duration="3817000" />
       <workItem from="1568394230579" duration="985000" />
+      <workItem from="1568537888356" duration="1808000" />
+      <workItem from="1568539958492" duration="1810000" />
+      <workItem from="1568622978635" duration="916000" />
+      <workItem from="1568626780044" duration="6787000" />
     </task>
     <task id="LOCAL-00001" summary="new berlin">
       <created>1568044199263</created>
@@ -268,17 +558,30 @@
       <option name="project" value="LOCAL" />
       <updated>1568371601552</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Align Button delete">
+      <created>1568529974448</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1568529974448</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Align Button delete in all index's">
+      <created>1568530146330</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1568530146330</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8075000" />
+    <option name="totallyTimeSpent" value="20684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978261" visible="true" weight="0.21409395" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978261" visible="true" weight="0.16308725" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -293,14 +596,14 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.33970588" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49932885" visible="true" weight="0.32352942" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49932885" visible="true" weight="0.33529413" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="PlantUML" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3295302" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +654,9 @@
     <MESSAGE value="Add New Home Page" />
     <MESSAGE value="New Edit Part Contact Us" />
     <MESSAGE value="New Edit Part Contact Us 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Edit Part Contact Us 2" />
+    <MESSAGE value="Align Button delete" />
+    <MESSAGE value="Align Button delete in all index's" />
+    <option name="LAST_COMMIT_MESSAGE" value="Align Button delete in all index's" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.env.example">
@@ -364,16 +669,8 @@
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blde.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="33" selection-end-line="372" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blde.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/index.html" />
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -381,10 +678,157 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/classroom/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="46" column="135" selection-start-line="46" selection-start-column="135" selection-end-line="46" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/payment/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="48" column="134" selection-start-line="48" selection-start-column="134" selection-end-line="48" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/professor/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="45" column="137" selection-start-line="45" selection-start-column="137" selection-end-line="45" selection-end-column="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/session/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="48" column="136" selection-start-line="48" selection-start-column="136" selection-end-line="48" selection-end-column="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/student/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="51" column="131" selection-start-line="51" selection-start-column="131" selection-end-line="51" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/formation/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="49" column="137" selection-start-line="49" selection-start-column="137" selection-end-line="49" selection-end-column="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_15_091944_create_names_table.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/category/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1612">
+          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_21_173805_create_categories_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_22_093941_create_formations_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="81" column="116" selection-start-line="81" selection-start-column="116" selection-end-line="81" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/category/form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+        <state relative-caret-position="546">
+          <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="917">
+          <caret line="68" column="33" lean-forward="true" selection-start-line="51" selection-start-column="28" selection-end-line="68" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="58" column="84" selection-start-line="58" selection-start-column="84" selection-end-line="58" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="135" column="4" selection-start-line="135" selection-start-column="4" selection-end-line="139" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="111" column="4" selection-start-line="111" selection-start-column="4" selection-end-line="111" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="86" column="4" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="138" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1196">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
         </state>
       </provider>
     </entry>
