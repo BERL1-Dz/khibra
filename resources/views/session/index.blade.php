@@ -33,20 +33,20 @@
         <tbody>
           @foreach($sessions as $session)
           <tr>
-            <th scope="row">{{$sessions->id}}</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th scope="row">{{$session->id}}</th>
+            <td>{{$session->start_date}}</td>
+            <td>{{$session->end_date}}</td>
+            <td>{{$session->nbr_max}}</td>
+            <td>{{$session->formation->name}}</td>
+            <td>{{$session->professor->name}}</td>
             <td>
               <div class="row">
-          <a href="{{route('sessions.edit', $sessions->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>
+          <a href="{{route('session.edit', $session->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>
           </a>
 
           <a href="#" class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target="#show"><i class="fa fa-eye" aria-hidden="true"></i></a>
 
-           <form method="POST" action="{{ route('sessions.destroy', $sessions->id) }}" style="float: left !important;display: contents;">
+           <form method="POST" action="{{ route('session.destroy', $session->id) }}" style="float: left !important;display: contents;">
             @csrf 
            {{ method_field('DELETE') }}
            <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn btn-danger btn-bordred wave-light"><i class="fa fa-times"></i></button>
