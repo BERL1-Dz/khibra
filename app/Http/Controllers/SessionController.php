@@ -17,10 +17,10 @@ class SessionController extends Controller
      */
     public function index()
     {
-        $sessions = Session::all();
         $formations = Formation::all();
         $professors = Professor::all();
         $students = Student::all();
+        $sessions = Session::all();
         return view('session.index', compact('sessions', 'students',      'formations','professors'));
     }
 
@@ -44,14 +44,15 @@ class SessionController extends Controller
     {
         //dd($request->all());
         $session = new Session();
-        $session->start_date = request('start_date');
-        $session->end_date = request('end_date');
-        $session->formation_id = request('formation_id');
-        $session->profe_id = request('profe_id');
-        $session->std_nbr = request('std_nbr');
-
+        
+        $session->start_date =request('start_date');
+        $session->end_date =request('end_date');
+        $session->formation_id =request('formation_id');
+        $session->prof_id =request('prof_id');
+        $session->nbr_max =request('nbr_max');
         $session->save();
 
+        return back();
         
     }
 

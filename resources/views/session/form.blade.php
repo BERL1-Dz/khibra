@@ -28,6 +28,6 @@
 	<br/>
 
 	# Max:
-	<input class="form-control" type="number" name="std_nbr"  value="">
+	<input class="form-control" type="number" name="nbr_max"  value="">
 
 </div>

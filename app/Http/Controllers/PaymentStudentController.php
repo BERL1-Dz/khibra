@@ -1,7 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades;
+use App\Payment;
+use App\Student;
+use App\Formation;
+use App\Professor;
 use App\Payment_Student;
 use Illuminate\Http\Request;
 
@@ -14,7 +18,7 @@ class PaymentStudentController extends Controller
      */
     public function index()
     {
-        //
+        return "echo";
     }
 
     /**
@@ -35,7 +39,7 @@ class PaymentStudentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->all());
     }
 
     /**

@@ -1,7 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Student;
+use App\Professor;
+use App\Formation;
+use App\Payment;
 use App\Payment_Professor;
 use Illuminate\Http\Request;
 
@@ -14,7 +17,8 @@ class PaymentProfessorController extends Controller
      */
     public function index()
     {
-        //
+        $professors new Professor::all();
+       return view('payment.index' compact('professors'));
     }
 
     /**
@@ -35,7 +39,13 @@ class PaymentProfessorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $prof_p = new Payment_Professor;
+        $prof_p->date =request('date');
+        $prof_p->amount =request('amount');
+        $prof_p->formation_id =request('formation_id');
+        $prof_p->professor_id =request('professor_id');
+
+        $prof_p->save();
     }
 
     /**

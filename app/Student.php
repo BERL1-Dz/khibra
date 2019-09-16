@@ -10,4 +10,8 @@ class Student extends Model
         return $this->hasMany('App\Presence');
     }
 
+    function payments(){
+        return $this->hasMany('App\Payments');
+    }
+
 }

@@ -10,4 +10,8 @@ class Professor extends Model
     	{
     		return $this->hasMany("App\Session");
     	}
+    	
+    function payments(){
+        return $this->hasMany('App\Payments');
+    }
 }

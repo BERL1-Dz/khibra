@@ -27,4 +27,8 @@ Route::resource('/student','StudentController');
 Route::resource('/classroom','ClassroomController');
 Route::resource('/session','SessionController');
 Route::resource('/payment','PaymentController');
+Route::resource('/paymentprof','PaymentProfessorController');
+Route::resource('/paymentstudent','PaymentStudentController');
+//Route::get('/student','PaymentProfessorController@index')->name('student');
+//Route::post('/payment','PaymentStudentController@store');
 

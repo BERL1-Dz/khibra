@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Payment;
 use App\Student;
+use App\Payment_Professor;
+use App\Payment_Student;
+use App\Formation;
 use App\Professor;
 use Illuminate\Http\Request;
 
@@ -16,11 +19,13 @@ class PaymentController extends Controller
      */
     public function index()
     {
+
+        $formations = Formation::all();
         $payments = Payment::all();
         $students = Student::all();
         $professors = Professor::all();
-        return view('payment.index', compact('payments','students'));
-
+        return view('payment.index', compact('payments','students','formations','professors'));
+       
     }
 
     /**
@@ -41,7 +46,7 @@ class PaymentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -52,7 +57,7 @@ class PaymentController extends Controller
      */
     public function show(Payment $payment)
     {
-        //
+        
     }
 
     /**

@@ -123,20 +123,7 @@
         <li><a href="{{route('student.index')}}"><i class="fas fa-fw fa-user-graduate"></i> <span>Students</span></a></li>
         <li><a href="{{route('classroom.index')}}"> <i class="fas fa-fw fa-chalkboard"></i> <span>Classrooms</span></a></li>
         <li><a href="{{route('session.index')}}"> <i class="fas fa-fw fa-school"></i> <span>Sessions</span></a></li>
-        <li class="treeview">
-          <a href="#"><i  class="fas fa-fw fa-coins"></i> <span>Payments</span>
-            <span class="pull-right-container">
-                <i  class="fa fa-angle-left pull-right"></i>
-              </span>
-          </a>
-          <ul class="treeview-menu">
-
-            <li><a href="{{route('payment.index')}}"><i class="fas fa-fw fa-chalkboard-teacher"></i> Professor Payments</a></li>
-            <li><a href="{{route('payment.index')}}"><i class="fas fa-fw fa-user-graduate"></i> Student Payments</a></li>
-          </ul>
-        </li>
-
-      </ul>
+        <li><a href="{{route('payment.index')}}"><i class="fas fa-fw fa-coins"></i> Payments</a></li>
       <!-- /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->

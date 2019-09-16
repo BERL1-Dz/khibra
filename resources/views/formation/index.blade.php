@@ -39,7 +39,7 @@
             <th scope="row">{{$formation->id}}</th>
             <td>{{$formation->name}}</td>
             <td>{{$formation->price}}</td>
-            <td>{{$formation->category->name}}</td>
+            <td></td>
             <td>{{$formation->durations}}</td>
             <td><div class="row">
 
