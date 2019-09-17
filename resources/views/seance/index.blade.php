@@ -33,8 +33,8 @@
           @foreach($seances as $seance)
           <tr>
             <th scope="row">{{$seance->id}}</th>
-            <td>{{$seance->session_id}}</td>
-            <td>{{$seance->classroom_id}}</td>
+            <td>{{$seance->session->start_date}}</td>
+            <td>{{$seance->classroom->name}}</td>
             <td>{{$seance->date}}</td>
             <td>{{$seance->duration}}</td>
             <td>

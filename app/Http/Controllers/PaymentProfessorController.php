@@ -44,7 +44,7 @@ class PaymentProfessorController extends Controller
         $prof_p->amount =request('amount');
         $prof_p->formation_id =request('formation_id');
         $prof_p->professor_id =request('professor_id');
-
+        
         $prof_p->save();
     }
 

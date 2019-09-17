@@ -33,15 +33,14 @@
           </tr>
         </thead>
         <tbody>
-          
+           @foreach($payments as $payment)
           <tr>
-            @foreach($payments as $payment)
-            <th scope="row"></th>
+            <th scope="row">{{$payment->payment_professor_id}}</th>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>
+              <td>
               <div class="row">
           <a href="{{route('payment.edit', $payment->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>
           </a>

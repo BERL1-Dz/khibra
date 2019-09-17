@@ -11,11 +11,11 @@ class Seance extends Model
 	}
 
 	function classroom(){
-		return $this->belongsTo('App\Classroom');
+		return $this->belongsTo("App\Classroom","classroom_id");
 	}
 
 	function session(){
-        return $this->belongsTo('App\Session');
+        return $this->belongsTo("App\Session","session_id");
     }
     
 }
