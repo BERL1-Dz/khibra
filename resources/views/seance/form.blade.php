@@ -1,16 +1,16 @@
 <div class="form-group">
 	
 	Session:
-	<select class="form-control">
+	<select name="session_id" class="form-control">
 		@foreach($sessions as $session)
-		<option value="{{$session->id}}">{{$session->name}}</option>
+		<option value="{{$session->id}}">{{$session->start_date}}</option>
 		@endforeach
 	</select>
 	<br/>
 	Classroom:
-	<select class="form-control">
+	<select name="classroom_id" class="form-control">
 		@foreach($classrooms as $classroom)
-		<option value="{{$classroom->id}}">{{$classroom->name}}</option>
+		<option  value="{{$classroom->id}}">{{$classroom->name}}</option>
 		@endforeach
 	</select>
 	<br/>

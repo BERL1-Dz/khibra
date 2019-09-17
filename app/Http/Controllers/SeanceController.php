@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades;
 use App\Session;
 use App\Classroom;
 use App\Seance;
@@ -39,7 +40,16 @@ class SeanceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //dd($request->all());
+
+        $seances =  new Seance;
+        $seances->session_id= request('session_id');
+        $seances->classroom_id= request('classroom_id');
+        $seances->date= request('date');
+        $seances->duration =request('duration');
+
+        $seances->save();
+        return back();
     }
 
     /**

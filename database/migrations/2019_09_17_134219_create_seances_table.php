@@ -17,7 +17,7 @@ class CreateSeancesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('session_id')->unsigned();
             $table->integer('classroom_id')->unsigned();
-            $table->dateTime('date');
+            $table->date('date');
             $table->time('duration')->nullable();
             $table->string('des')->nullable();
             $table->timestamps();

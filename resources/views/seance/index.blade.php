@@ -33,10 +33,10 @@
           @foreach($seances as $seance)
           <tr>
             <th scope="row">{{$seance->id}}</th>
-            <td>Session</td>
-            <td>Classroom</td>
-            <td>Date</td>
-            <td>Duration</td>
+            <td>{{$seance->session_id}}</td>
+            <td>{{$seance->classroom_id}}</td>
+            <td>{{$seance->date}}</td>
+            <td>{{$seance->duration}}</td>
             <td>
               <div class="row">
           <a href="{{route('seance.edit', $seance->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>
