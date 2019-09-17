@@ -75,7 +75,10 @@ class SessionController extends Controller
      */
     public function edit(Session $session)
     {
-        //
+        $professors = Professor::all();
+        $formations = Formation::all();
+        $session = Session::find($session->id);
+        return view('session.edit',compact('session','formations','professors'));
     }
 
     /**
@@ -87,7 +90,15 @@ class SessionController extends Controller
      */
     public function update(Request $request, Session $session)
     {
-        //
+        $session->start_date =request('start_date');
+        $session->end_date =request('end_date');
+        $session->formation_id =request('formation_id');
+        $session->prof_id =request('prof_id');
+        $session->nbr_max =request('nbr_max');
+
+        $session->save();
+        return redirect()->route('session.index');
+        
     }
 
     /**

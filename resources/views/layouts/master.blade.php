@@ -124,6 +124,7 @@
         <li><a href="{{route('classroom.index')}}"> <i class="fas fa-fw fa-chalkboard"></i> <span>Classrooms</span></a></li>
         <li><a href="{{route('session.index')}}"> <i class="fas fa-fw fa-school"></i> <span>Sessions</span></a></li>
         <li><a href="{{route('payment.index')}}"><i class="fas fa-fw fa-coins"></i> Payments</a></li>
+        <li><a href="{{route('seance.index')}}"><i class="fas fa-fw fa-book-open"></i> Seance</a></li>
       <!-- /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->

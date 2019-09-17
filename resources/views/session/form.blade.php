@@ -9,7 +9,6 @@
      <br/>
 
 	Formation:
-	
 	<select class="form-control" name="formation_id">
 		@foreach($formations as $formation)
 		<option value="{{$formation->id}}">{{$formation->name}}</option>

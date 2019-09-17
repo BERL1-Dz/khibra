@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Session extends Model
 {
+
+     function seances(){
+        return $this->hasMany('App\Seance');
+    }
+
     function Professor()
     	{
     		return $this->belongsTo("App\Professor","prof_id");
@@ -16,13 +21,4 @@ class Session extends Model
     		return $this->belongsTo("App\Formation","formation_id");
     	}
     	
-    	 function seances(){
-        return $this->hasMany('App\Seance');
-    }
-
-    
-   
-
-
-  
 }

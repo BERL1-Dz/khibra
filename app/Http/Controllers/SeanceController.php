@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Session;
+use App\Classroom;
 use App\Seance;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,10 @@ class SeanceController extends Controller
      */
     public function index()
     {
-        //
+        $seances = Seance::all();
+        $sessions = Session::all();
+        $classrooms = Classroom::all();
+        return view('seance.index',compact('seances','sessions','classrooms'));
     }
 
     /**
