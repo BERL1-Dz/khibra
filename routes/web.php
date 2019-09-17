@@ -30,6 +30,7 @@ Route::resource('/payment','PaymentController');
 Route::resource('/seance','SeanceController');
 Route::resource('/paymentprof','PaymentProfessorController');
 Route::resource('/paymentstudent','PaymentStudentController');
+Route::resource('/presence','PresenceController');
 //Route::get('/student','PaymentProfessorController@index')->name('student');
 //Route::post('/payment','PaymentStudentController@store');
 

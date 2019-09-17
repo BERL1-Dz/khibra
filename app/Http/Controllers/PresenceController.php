@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Student;
+use App\Seance;
 use App\Presence;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,10 @@ class PresenceController extends Controller
      */
     public function index()
     {
-        //
+        $seances = Seance::all();
+        $students = Student::all();
+        $presences = Presence::all();
+        return view('presence.index', compact('presences','students','seances'));
     }
 
     /**
@@ -35,7 +39,15 @@ class PresenceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //dd($request->all());
+        $presence = new Presence;
+        $presence->seance_id = request('seance_id');
+        $presence->student_id = request('student_id');
+        $presence->presence = request('presence');
+
+        $presence->save();
+        return back();
+
     }
 
     /**

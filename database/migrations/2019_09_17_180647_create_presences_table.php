@@ -17,6 +17,7 @@ class CreatePresencesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('seance_id')->unsigned();
             $table->integer('student_id')->unsigned();
+            $table->string('presence');
             $table->timestamps();
         });
     }
