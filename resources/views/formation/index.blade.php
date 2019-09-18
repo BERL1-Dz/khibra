@@ -45,7 +45,10 @@
 
           <a href="{{route('formation.edit', $formation->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i></a>
           </a>
-           <a href="{{route('formation.show', $formation->id)}}"  class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target="#show"><i class="fa fa-eye" aria-hidden="true"></i></a>
+          <!--
+           <a href="{{route('formation.show', $formation->id)}}"  class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target="#Modal"><i class="fa fa-eye" aria-hidden="true"></i></a>
+         -->
+          <a href="#"><button type="button" class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fa fa-eye" aria-hidden="true"></i></button></a>
 
           <form method="POST" action="{{ route('formation.destroy', $formation->id) }}" style="float: left !important;display: contents;">
             @csrf 
@@ -85,4 +88,23 @@
     </div>
   </div>
 </div>
+
+
+<!-- show -->
+
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+       <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><i class="fas fa-fw fa-book"></i> View Formation</h4>
+      </div>
+      <div class="model-body">
+        @include('formation.show')
+      </div>
+    </div>
+  </div>
+</div>
+
 @endsection

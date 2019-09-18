@@ -19,7 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/search','CategoryController@search');
-//Route::get('/category', 'CategoryController@index')->name('index');
 Route::resource('/category','CategoryController');
 Route::resource('/formation','FormationController');
 Route::resource('/professor','ProfessorController');
@@ -31,6 +30,4 @@ Route::resource('/seance','SeanceController');
 Route::resource('/paymentprof','PaymentProfessorController');
 Route::resource('/paymentstudent','PaymentStudentController');
 Route::resource('/presence','PresenceController');
-//Route::get('/student','PaymentProfessorController@index')->name('student');
-//Route::post('/payment','PaymentStudentController@store');
 

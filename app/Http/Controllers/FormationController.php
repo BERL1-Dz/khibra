@@ -69,7 +69,7 @@ class FormationController extends Controller
      */
     public function show(Formation $formation)
     {
-        //
+        
     }
 
     /**
