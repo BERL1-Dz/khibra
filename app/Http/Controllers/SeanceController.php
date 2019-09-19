@@ -71,7 +71,10 @@ class SeanceController extends Controller
      */
     public function edit(Seance $seance)
     {
-        //
+        $classrooms = Classroom::all();
+        $sessions = Session::all();
+        $seance = Seance::find($seance->id);
+        return view('seance.edit', compact('seance','sessions','classrooms'));
     }
 
     /**
@@ -83,7 +86,13 @@ class SeanceController extends Controller
      */
     public function update(Request $request, Seance $seance)
     {
-        //
+        $seance->session_id= request('session_id');
+        $seance->classroom_id= request('classroom_id');
+        $seance->date= request('date');
+        $seance->duration =request('duration');
+
+        $seance->save();
+        return redirect()->route('seance.index');
     }
 
     /**
@@ -94,6 +103,6 @@ class SeanceController extends Controller
      */
     public function destroy(Seance $seance)
     {
-        //
+        
     }
 }

@@ -13,12 +13,9 @@
             <option value="Other">Other</option>
       </select>
       <br/>
-      <form class="form-group">
        Birthday:
        <br/>
-      <input type="date" name="birthday">
-      <br/>
-      </form>
+      <input class="form-control" type="date" name="birthday">
       <br/>
       Phone:
     <input type="tel" name="phone" class="form-control" placeholder="" />  

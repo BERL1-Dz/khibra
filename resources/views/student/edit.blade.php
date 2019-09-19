@@ -19,7 +19,7 @@
         <br/>
       Gender:
        <select name="gender"  class="form-control">
-            <option value="">Choose</option>
+            <option value="{{$student->gender}}">{{$student->gender}}</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
             <option value="Other">Other</option>
