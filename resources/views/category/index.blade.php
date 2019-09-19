@@ -9,6 +9,7 @@
       <h3 class="box-title">All Categories</h3>
     </div>
     <br/>
+    <!--Search data-->
     <div class="col-md-4 search">
       <form action="/search" method="GET">
         <div class="input-group">
@@ -19,6 +20,8 @@
         </div>
       </form>
     </div>
+
+    <!-- Datatable -->
     <div class="box-body">
       
             <table class="table">
@@ -42,9 +45,6 @@
               <div class="row">
           <a href="{{route('category.edit', $category->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>
           </a>
-
-          <a href="{{route('category.show', $category->id)}}"  class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target="#show"><i class="fa fa-eye" aria-hidden="true"></i></a>
-
            <form method="POST" action="{{ route('category.destroy', $category->id) }}" style="float: left !important;display: contents;">
             @csrf 
            {{ method_field('DELETE') }}
@@ -97,19 +97,8 @@
       </div>
 
         </form>
-      
-     
     </div>
   </div>
 </div>
 
-<!--Show-->
-
-<div id="show" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      ...
-    </div>
-  </div>
-</div>
 @endsection

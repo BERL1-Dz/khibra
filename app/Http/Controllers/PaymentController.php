@@ -19,9 +19,11 @@ class PaymentController extends Controller
      */
     public function index()
     {
-
         $formations = Formation::all();
-        $payments = Payment::all();
+        $payments = Payment_Professor::all();
+        $payments_s = Payment_Student::all();
+            //merge two collections
+        $payments->merge($payments_s);
         $students = Student::all();
         $professors = Professor::all();
         return view('payment.index', compact('payments','students','formations','professors'));
@@ -46,7 +48,7 @@ class PaymentController extends Controller
      */
     public function store(Request $request)
     {
-        
+        echo "feve";
     }
 
     /**

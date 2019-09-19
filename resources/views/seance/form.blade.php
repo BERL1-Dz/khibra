@@ -22,5 +22,5 @@
      </form>
      <br/>
     Duration:
-    <input type="number" name="duration" class="form-control">
+    <input type="number" step="0.001" name="duration" class="form-control">
 </div>

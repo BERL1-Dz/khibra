@@ -25,7 +25,6 @@
             <th scope="col">Session</th>
             <th scope="col">Classroom</th>
             <th scope="col">Date</th>
-            <th scope="col">Duration</th>
             <th scope="col">Action </th>
           </tr>
         </thead>
@@ -36,7 +35,6 @@
             <td>{{$seance->session->start_date}}</td>
             <td>{{$seance->classroom->name}}</td>
             <td>{{$seance->date}}</td>
-            <td>{{$seance->duration}}</td>
             <td>
               <div class="row">
           <a href="{{route('seance.edit', $seance->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>

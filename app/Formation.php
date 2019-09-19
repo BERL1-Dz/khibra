@@ -16,4 +16,8 @@ class Formation extends Model
     	{
     		return $this->hasMany("App\Session");
     	}
+    
+     function Payment_Professor(){
+        return $this->hasMany('App\Payment_Professor');
+    }
 }

@@ -18,7 +18,8 @@ class PaymentStudentController extends Controller
      */
     public function index()
     {
-        return "echo";
+        $students = Student::all();
+       return view('payment.index', compact('students'));
     }
 
     /**
@@ -39,7 +40,15 @@ class PaymentStudentController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        //dd($request->all());
+        $student_p = new Payment_Student;
+        $student_p->date =request('date');
+        $student_p->amount =request('amount');
+        $student_p->formation_id =request('formation_id');
+        $student_p->student_id =request('student_id');
+
+        $student_p->save();
+        return back();
     }
 
     /**

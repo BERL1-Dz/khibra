@@ -14,4 +14,8 @@ class Professor extends Model
     function payments(){
         return $this->hasMany('App\Payments');
     }
+
+     function Payment_Professor(){
+        return $this->hasMany('App\Payment_Professor');
+    }
 }

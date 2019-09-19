@@ -36,11 +36,17 @@
         <tbody>
            @foreach($payments as $payment)
           <tr>
-            <th scope="row">{{$payment->payment_professor_id}}</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th scope="row">{{$payment->id}}</th>
+            <td>{{$payment->date}}</td>
+            <td>@if(!empty($payment->formation))
+              {{$payment->formation->name}}
+                  @endif
+            </td>
+            <td>@if(!empty($payment->professor))
+              {{$payment->professor->name}}
+              @endif
+            </td>
+            <td>{{$payment->amount}}</td>
               <td>
               <div class="row">
           <a href="{{route('payment.edit', $payment->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>

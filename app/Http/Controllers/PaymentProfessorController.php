@@ -17,8 +17,8 @@ class PaymentProfessorController extends Controller
      */
     public function index()
     {
-        $professors new Professor::all();
-       return view('payment.index' compact('professors'));
+        $professors = Professor::all();
+       return view('payment.index', compact('professors'));
     }
 
     /**
@@ -46,6 +46,7 @@ class PaymentProfessorController extends Controller
         $prof_p->professor_id =request('professor_id');
         
         $prof_p->save();
+        return back();
     }
 
     /**

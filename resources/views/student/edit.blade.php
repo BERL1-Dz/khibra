@@ -19,10 +19,10 @@
         <br/>
       Gender:
        <select name="gender"  class="form-control">
-            <option value="{{$student->gender}}">{{$student->gender}}</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Other">Other</option>
+            <option value="Choose"></option>
+            <option @if($student->gender =="Male") selected @endif value="Male">Male</option>
+            <option @if($student->gender =="Female") selected @endif value="Female">Female</option>
+            <option @if($student->gender =="Other") selected @endif value="Other">Other</option>
       </select>
         <br/>
         Birthday:

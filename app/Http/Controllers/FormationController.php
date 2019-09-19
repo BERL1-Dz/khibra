@@ -69,6 +69,9 @@ class FormationController extends Controller
      */
     public function show(Formation $formation)
     {
+        $categories= Category::all();
+        $formation = Formation::find($formation->id);
+        return view('formation.show',compact('formation','categories'));
         
     }
 
