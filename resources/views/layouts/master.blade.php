@@ -1,244 +1,240 @@
-
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>KHIBRA</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="{{asset('bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
-
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{asset('bower_components/font-awesome/css/font-awesome.min.css')}}">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="{{asset('bower_components/Ionicons/css/ionicons.min.css')}}">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="{{asset('dist/css/AdminLTE.min.css')}}">
-  <script src="{{asset('bower_components/sweetalert2/dist/sweetalert2.all.min.js')}}"></script>
-  <script src="{{asset('bower_components/sweetalert2/dist/sweetalert2.min.js')}}"></script>
-  <link rel="stylesheet" href="{{asset('bower_components/sweetalert2/dist/sweetalert2.min.css')}}">
-  <link rel="stylesheet" href="{{asset('dist/css/skins/skin-blue.min.css')}}">
-  <link rel="stylesheet" type="text/css" href="{{asset('css/all.min.css')}}">
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-<script src="{{asset('https://kit.fontawesome.com/7950fee4f9.js')}}"></script>
-    <script src="../../folders/node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
-
-
-
-  <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-  
+    <title>Khibra Academy | Dashboard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="icon" href="folders/images/favico.ico" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+    <link href="../../master/assets/js/plugins/nucleo/css/nucleo.css" rel="stylesheet" />
+    <link href="../../master/assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link href="../../master/assets/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
 </head>
-
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
-
-  <!-- Main Header -->
-  <header class="main-header">
-
-    <!-- Logo -->
-    <a href="" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>K</b>AC</span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Dashboard</b></span>
-    </a>
-
-    <!-- Header Navbar -->
-    <nav class="navbar navbar-static-top" role="navigation">
-      <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>
-      <!-- Navbar Right Menu -->
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-         
-       
-          <!-- User Account Menu -->
-          <li class="dropdown user user-menu">
-            <!-- Menu Toggle Button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <!-- The user image in the navbar-->
-              <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="user-image" alt="User Image">
-              <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <span class="hidden-xs">{{Auth::user()->name}}</span>
-            </a>
-            <ul class="dropdown-menu">
-              <!-- The user image in the menu -->
-              <li class="user-header">
-                <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
-
-                <p>
-                  <p>{{Auth::user()->name}}</p>
-                  Academic School
-                </p>
-              </li>
-              <li class="user-footer">
-                <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+<body>
+<!----------------------------NavBar---------------------------------->
+<nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
+    <div class="container-fluid">
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Brand -->
+        <a class="navbar-brand pt-0" href="../index.html">
+            <img src="../../master/assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
+        </a>
+        <!-- User -->
+        <ul class="nav align-items-center d-md-none">
+            <li class="nav-item dropdown">
+                <a class="nav-link nav-link-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="ni ni-bell-55"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right" aria-labelledby="navbar-default_dropdown_1">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
                 </div>
-                <div class="pull-right">
-                  <a href="{{ route('logout') }}}" class="btn btn-default btn-flat" onclick="event.preventDefault();
-                             document.getElementById('logout-form').submit();"> Sign out</a>
-
-    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                @csrf
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="media align-items-center">
+                    </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+                    <div class=" dropdown-header noti-title">
+                        <h6 class="text-overflow m-0">Welcome!</h6>
+                    </div>
+                    <a href="#" class="dropdown-item">
+                        <i class="ni ni-single-02"></i>
+                        <span>My profile</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                        <i class="ni ni-user-run"></i>
+                        <span>Logout</span>
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                </div>
+            </li>
+        </ul>
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+            <!-- Collapse header -->
+            <div class="navbar-collapse-header d-md-none">
+                <div class="row">
+                    <div class="col-6 collapse-brand">
+                        <a href="../index.html">
+                            <img src="../../master/assets/img/brand/blue.png">
+                        </a>
+                    </div>
+                    <div class="col-6 collapse-close">
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Form -->
+            <form class="mt-4 mb-3 d-md-none">
+                <div class="input-group input-group-rounded input-group-merge">
+                    <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="Search" aria-label="Search">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <span class="fa fa-search"></span>
+                        </div>
+                    </div>
+                </div>
             </form>
-                </div>
-              </li>
+            <!-- Navigation -->
+            <ul class="navbar-nav">
+                <li class="nav-item  class=" active" ">
+                <a class=" nav-link " href="{{url('home')}}"> <i class="ni ni-tv-2 text-primary"></i> Dashboard
+                </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="{{route('category.index')}}">
+                        <i class="fas fa-folder text-blue"></i>Categories
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="{{route('formation.index')}}">
+                        <i class="fas fa-book text-orange"></i>Formations
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="{{route('professor.index')}}">
+                        <i class="fas fa-chalkboard-teacher text-yellow"></i>Professors
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  active " href="{{route('student.index')}}">
+                        <i class="fas fa-user-graduate text-red"></i>Students
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('classroom.index')}}">
+                        <i class="fas fa-chalkboard text-info"></i>Classrooms
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('session.index')}}">
+                        <i class="fas fa-school text-grey"></i>Sessions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('payment.index')}}">
+                        <i class="fas fa-coins text-pink"></i>Payments
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('seance.index')}}">
+                        <i class="fas fa-book-open text-purple"></i>Seance
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('presence.index')}}">
+                        <i class="fas fa-user-check text-green"></i>Presence
+                    </a>
+                </li>
             </ul>
-          </li>
-          
-         
-        </ul>
-      </div>
+        </div>
+    </div>
+</nav>
+<div class="main-content">
+    <!-- Navbar -->
+    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+        <div class="container-fluid">
+            <!-- Brand -->
+            <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Khibra Academy | Dashboard</a>
+            <!-- User -->
+            <ul class="navbar-nav align-items-center d-none d-md-flex">
+                <li class="nav-item dropdown">
+                    <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="media align-items-center">
+                            <div class="media-body ml-2 d-none d-lg-block">
+                                <span class="mb-0 text-sm  font-weight-bold" style="border: 2px solid;padding: 6px;padding-left: 9px;padding-right: 9px;border-radius: 5px !important;">{{ Auth::user()->name }}</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+                        <div class=" dropdown-header noti-title">
+                            <h6 class="text-overflow m-0">Welcome!</h6>
+                        </div>
+                        <a href="{{url('/profile')}}" class="dropdown-item">
+                            <i class="ni ni-single-02"></i>
+                            <span>My profile</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            <i class="ni ni-user-run"></i>
+                            <span>Logout</span>
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </nav>
-  </header>
-  <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
+<!----------------------------------------End NavBar------------------------------->
 
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel">
-        <div class="pull-left image">
-          <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
+<!----------------------------------------Header----------------------------------->
+    <!-- Header -->
+    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+        <div class="container-fluid">
+            <div class="header-body">
+                @yield('stats')
+            </div>
         </div>
-        <div class="pull-left info">
-          <p>{{Auth::user()->name}}</p>
-          <!-- Status -->
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+    </div>
+
+<!--------------------------------------end Header------------------------------------->
+    @yield('main-content')
+    @yield('content')
+
+
+
+<!-------------------------------------Footer----------------------------------------->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="row align-items-center justify-content-xl-between">
+            <div class="col-xl-6">
+                <div class="copyright text-center text-xl-left text-muted">
+                    &copy; 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Khibra Academy</a>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+                    <li class="nav-item">
+                        <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Kessoum Mohamed</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Addeche Kamel Chewki</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-
-      <!-- Sidebar Menu -->
-      <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">HEADER</li>
-        <!-- Optionally, you can add icons to the links -->
-        <li class=""><a href="{{route('category.index')}}"><i class="fas fa-fw fa-folder"></i> <span>Categories</span></a></li>
-        <li><a href="{{route('formation.index')}}"><i class="fas fa-fw fa-book"></i> <span>Formations</span></a></li>
-        <li><a href="{{route('professor.index')}}"><i class="fas fa-fw fa-chalkboard-teacher"></i> <span>Professors</span></a></li>
-        <li><a href="{{route('student.index')}}"><i class="fas fa-fw fa-user-graduate"></i> <span>Students</span></a></li>
-        <li><a href="{{route('classroom.index')}}"> <i class="fas fa-fw fa-chalkboard"></i> <span>Classrooms</span></a></li>
-        <li><a href="{{route('session.index')}}"> <i class="fas fa-fw fa-school"></i> <span>Sessions</span></a></li>
-        <li><a href="{{route('payment.index')}}"><i class="fas fa-fw fa-coins"></i> Payments</a></li>
-        <li><a href="{{route('seance.index')}}"><i class="fas fa-fw fa-book-open"></i> Seance</a></li>
-        <li><a href="{{route('presence.index')}}"><i class="fas fa-user-check"></i> Presence</a></li>
-      <!-- /.sidebar-menu -->
-    </section>
-    <!-- /.sidebar -->
-  </aside>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    
-    <!-- Main content -->
-    <section class="content container-fluid">
-
-      @yield('content')
-
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
-  <!-- Main Footer -->
-  <footer class="main-footer">
-    <!-- To the right -->
-    <div class="pull-right hidden-xs">
-      Created by <a href="#">KESSOUM</a>.
-    </div>
-    <!-- Default to the left -->
-    <strong>Copyright &copy; 2019 <a href="https://www.linkedin.com/in/med-red-baa584156/">Innocom</a>.</strong> All rights reserved.
-  </footer>
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Create the tabs -->
-    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-      <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-    </ul>
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <!-- Home tab content -->
-      <div class="tab-pane active" id="control-sidebar-home-tab">
-        <h3 class="control-sidebar-heading">Recent Activity</h3>
-        <ul class="control-sidebar-menu">
-          <li>
-            <a href="javascript:;">
-              <i class="menu-icon fa fa-birthday-cake bg-red"></i>
-
-              <div class="menu-info">
-                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
-
-                <p>Will be 23 on April 24th</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <!-- /.control-sidebar-menu -->
-
-        <h3 class="control-sidebar-heading">Tasks Progress</h3>
-        <ul class="control-sidebar-menu">
-          <li>
-            <a href="javascript:;">
-              <h4 class="control-sidebar-subheading">
-                Custom Template Design
-                <span class="pull-right-container">
-                    <span class="label label-danger pull-right">70%</span>
-                  </span>
-              </h4>
-
-              <div class="progress progress-xxs">
-                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <!-- /.control-sidebar-menu -->
-
-      </div>
-      <!-- /.tab-pane -->
-      <!-- Stats tab content -->
-      <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
-      <!-- /.tab-pane -->
-      <!-- Settings tab content -->
-      <div class="tab-pane" id="control-sidebar-settings-tab">
-        <form method="post">
-          <h3 class="control-sidebar-heading">General Settings</h3>
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Report panel usage
-              <input type="checkbox" class="pull-right" checked>
-            </label>
-
-            <p>
-              Some information about this general settings option
-            </p>
-          </div>
-          <!-- /.form-group -->
-        </form>
-      </div>
-      <!-- /.tab-pane -->
-    </div>
-  </aside>
-  <!-- /.control-sidebar -->
-  <!-- Add the sidebar's background. This div must be placed
-  immediately after the control sidebar -->
-  <div class="control-sidebar-bg"></div>
+    </footer>
 </div>
+<!----------------------------------------end Footer----------------------------------------->
 
-<!-- jQuery 3 -->
-<script src="{{asset('bower_components/jquery/dist/jquery.min.js')}}"></script>
-<!-- Bootstrap 3.3.7 -->
- <script src="{{asset('bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
-<!-- AdminLTE App -->
-<script src="{{asset('dist/js/adminlte.min.js')}}"></script>
+   <!--   Core   -->
+   <script src="../../master/assets/js/plugins/jquery/dist/jquery.min.js"></script>
+   <script src="../../master/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   <!--   Optional JS   -->
+   <!--   Argon JS   -->
+   <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+
 </body>
 </html>
