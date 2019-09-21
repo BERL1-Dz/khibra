@@ -14,4 +14,8 @@ class Student extends Model
         return $this->hasMany('App\Payments');
     }
 
+     function Payment_Student(){
+        return $this->hasMany("App\Payment_Professor","student_id");
+    }
+
 }

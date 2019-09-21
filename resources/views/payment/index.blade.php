@@ -1,16 +1,15 @@
 
 @extends('layouts.master')
 @section('content')
+<!--Professor Table-->
 <div class="">
 	<div class="box">
-    <div class="box-header">
+    	<div class="box-header">
       <h3 class="box-title"><i class="fas fa-fw fa-coins"></i> Payments</h3>
-      <a href="#" class="btn  btn-sm btn-primary" data-toggle="modal" data-target="#Student"> <i class="fas fa-fw fa-user-graduate"></i>Student Payment</a>
-      <a href="#" id="btn" class="btn  btn-sm btn-warning" data-toggle="modal" data-target="#Prof"> <i class="fas fa-fw fa-chalkboard-teacher"></i> Professor Payment</a>
-      
-    </div>
-    <br/>
-    <div class="col-md-4 search">
+      <a href="#" id="btn" class="btn  btn-sm btn-warning" data-toggle="modal" data-target="#Prof"> <i class="fas fa-fw fa-chalkboard-teacher"></i> Professor Payment</a> 
+    	</div>
+    	<br/>
+    	<div class="col-md-4 search">
       <form action="/search" method="GET">
         <div class="input-group">
           <input type="search" name="search" class="form-control">
@@ -19,8 +18,8 @@
           </span>
         </div>
       </form>
-    </div>
-    <div class="box-body">
+    	</div>
+    	<div class="box-body">
       
             <table class="table">
         <thead>
@@ -34,6 +33,7 @@
           </tr>
         </thead>
         <tbody>
+        </tbody>
            @foreach($payments as $payment)
           <tr>
             <th scope="row">{{$payment->id}}</th>
@@ -65,9 +65,71 @@
           </tr>
           @endforeach  
         </table>
+    	</div>
+  	</div>
 
-    </div>
-  </div>
+</div>
+<br/>
+<!--Student table -->
+<div class="">
+	<div class="box">
+    	<div class="box-header">
+      <h3 class="box-title"><i class="fas fa-fw fa-coins"></i> Payments</h3>
+      <a href="#" class="btn  btn-sm btn-primary" data-toggle="modal" data-target="#Student"> <i class="fas fa-fw fa-user-graduate"></i>Student Payment</a>
+    	</div>
+    	<br/>
+    	<div class="col-md-4 search">
+      <form action="/search" method="GET">
+        <div class="input-group">
+          <input type="search" name="search" class="form-control">
+          <span class="input-group-prepend">
+            <button type="submit" class="btn btn-primary bouton">Search</button>
+          </span>
+        </div>
+      </form>
+    	</div>
+    	<div class="box-body">
+      
+            <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Date</th>
+            <th scope="col">Formation</th>
+            <th scope="col">Student</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+
+           @foreach($students as $student)
+          <tr>
+            <th scope="row">{{$student->id}}</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+              <td>
+              <div class="row">
+          <a href="#"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>
+          </a>
+
+          <a href="#"  class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target="#show"><i class="fa fa-eye" aria-hidden="true"></i></a>
+
+           <form method="POST" action="#" style="float: left !important;display: contents;">
+            @csrf 
+           {{ method_field('DELETE') }}
+           <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn btn-danger btn-bordred wave-light"><i class="fa fa-times"></i></button>
+          </form>
+            </div>
+          </td>
+          </tr>
+          @endforeach  
+        </table>
+    	</div>
+  	</div>
 
 </div>
 

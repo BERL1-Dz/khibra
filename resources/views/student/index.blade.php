@@ -47,7 +47,7 @@
              <div class="row">
           <a href="{{route('student.edit', $student->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i></a>
 
-          <a href="#" class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target="#show"><i class="fa fa-eye" aria-hidden="true"></i></a>
+          <a href="{{route('student.show', $student->id)}}" class="btn btn-warning btn-bordred wave-light"><i class="fa fa-eye" aria-hidden="true"></i></a>
 
           <form method="POST" action="{{route('student.destroy', $student->id)}}" style="float: left !important;display: contents;">
             @csrf 

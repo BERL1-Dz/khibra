@@ -58,7 +58,8 @@ class PresenceController extends Controller
      */
     public function show(Presence $presence)
     {
-        //
+        $presence = Presence::find($presence->id);
+        return view('presence.show',compact('presence'));
     }
 
     /**
@@ -69,7 +70,7 @@ class PresenceController extends Controller
      */
     public function edit(Presence $presence)
     {
-        //
+        echo "string";
     }
 
     /**
@@ -81,7 +82,7 @@ class PresenceController extends Controller
      */
     public function update(Request $request, Presence $presence)
     {
-        //
+        return "view";
     }
 
     /**

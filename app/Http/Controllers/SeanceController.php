@@ -60,7 +60,8 @@ class SeanceController extends Controller
      */
     public function show(Seance $seance)
     {
-        //
+        $seance = Seance::find($seance->id);
+        return view('seance.show',compact('seance'));
     }
 
     /**

@@ -55,7 +55,8 @@ class ClassroomController extends Controller
      */
     public function show(Classroom $classroom)
     {
-        //
+        $classroom = Classroom::find($classroom->id);
+        return view('classroom.show',compact('classroom'));
     }
 
     /**

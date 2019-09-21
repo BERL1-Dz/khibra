@@ -10,7 +10,15 @@ class Payment extends Model
     	return $this->hasMany("App\Payment_Professor","professor_id");
     }
 
+    function Payment_Student(){
+    	return $this->hasMany("App\Payment_Student","student_id")
+    }
+
     function Professor(){
     	return $this->belongsTo("App\Professor","professor_id");
+    }
+
+    function Student(){
+    	return $this->belongsTo("App\Student","student_id");
     }
 }

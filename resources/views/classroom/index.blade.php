@@ -42,7 +42,7 @@
             <a href="{{route('classroom.edit', $classroom->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i></a>
 
                 
-           <a href="#" class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target="#show"><i class="fa fa-eye" aria-hidden="true"></i></a>
+           <a href="{{route('classroom.show', $classroom->id)}}" class="btn btn-warning btn-bordred wave-light"><i class="fa fa-eye" aria-hidden="true"></i></a>
 
           <form method="POST" action="{{route('classroom.destroy', $classroom->id)}}" style="float: left !important;display: contents;">
             @csrf 
@@ -109,36 +109,5 @@
   </div>
 </div>
 	
-	<!--Delete-->
-<div class="modal modal-danger fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title text-center" id="myModalLabel">Delete Confirmation</h4>
-      </div>
-        <form action="{{ route('classroom.destroy','test')}}" method="post" enctype="multipart/form-data">
-          {{method_field('DELETE')}}
-          @csrf
-          <div class="modal-body">
-            <p class="text-center">
-              Are you sure you want to delete this?
-
-            </p>
-            <input type="hidden" name="" id="" value="">
-            
-          </div>  
-           <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-dismiss="modal">No!</button>
-        <button type="submit" class="btn btn-warning">Yes, Delete!</button>
-      </div>
-        </form>
-      
-     
-    </div>
-  </div>
-</div>
-
-
 </div>
 @endsection 

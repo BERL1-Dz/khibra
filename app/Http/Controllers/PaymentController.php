@@ -19,14 +19,16 @@ class PaymentController extends Controller
      */
     public function index()
     {
+
+
         $formations = Formation::all();
         $payments = Payment_Professor::all();
-        $payments_s = Payment_Student::all();
+        $payment_s = Payment_Student::all();
             //merge two collections
-        $payments->merge($payments_s);
+        //$payments->merge('$payments_s');
         $students = Student::all();
         $professors = Professor::all();
-        return view('payment.index', compact('payments','students','formations','professors'));
+        return view('payment.index', compact('payments','students','formations','professors','payment_s'));
        
     }
 

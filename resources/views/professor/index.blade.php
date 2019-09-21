@@ -41,7 +41,7 @@
     <div class="row">
           <a href="{{route('professor.edit', $professor->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i></a>
 
-          <a href="#" class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target="#show"><i class="fa fa-eye" aria-hidden="true"></i></a>
+          <a href="{{route('professor.show', $professor->id)}}" class="btn btn-warning btn-bordred wave-light"><i class="fa fa-eye" aria-hidden="true"></i></a>
 
           <form method="POST" action="{{ route('professor.destroy', $professor->id) }}" style="float: left !important;display: contents;">
             @csrf 
@@ -72,7 +72,6 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">New Professor</h4>
       </div>
-      
         <form action="{{ route('professor.store')}}" method="post" enctype="multipart/form-data">
         	@csrf
           <div class="modal-body">
@@ -86,7 +85,6 @@
     </div>
   </div>
 </div>
-
 </div>
 
 @endsection

@@ -64,7 +64,9 @@ class SessionController extends Controller
      */
     public function show(Session $session)
     {
-        //
+        $session = Session::find($session->id);
+        return view('session.show',compact('session'));
+        
     }
 
     /**
