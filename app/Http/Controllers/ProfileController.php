@@ -1,16 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Payment;
-use App\Student;
-use App\Payment_Professor;
-use App\Payment_Student;
-use App\Formation;
-use App\Professor;
+use App\User;
+use App\Profile;
 use Illuminate\Http\Request;
 
-class PaymentController extends Controller
+class ProfileController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,19 +14,9 @@ class PaymentController extends Controller
      */
     public function index()
     {
-
-
-        $formations = Formation::all();
-        $salaries = Payment_Professor::all();
-        $payments = Payment_Student::all();
-        $paymentprof = Payment_Professor::all();
-
-            //merge two collections
-        //$payments->merge('$payments_s');
-        $students = Student::all();
-        $professors = Professor::all();
-        return view('payment.index', compact('salaries','students','formations','professors','payments','paymentprof'));
-       
+        $profiles = Profile::all();
+        $user = User::find('$user->id');
+        return view('profile.index',compact('profiles','user'));
     }
 
     /**
@@ -58,33 +43,33 @@ class PaymentController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Payment  $payment
+     * @param  \App\Profile  $profile
      * @return \Illuminate\Http\Response
      */
-    public function show(Payment $payment)
+    public function show(Profile $profile)
     {
-        
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Payment  $payment
+     * @param  \App\Profile  $profile
      * @return \Illuminate\Http\Response
      */
-    public function edit(Payment $payment)
+    public function edit(Profile $profile)
     {
-        echo "charile";
+        //
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Payment  $payment
+     * @param  \App\Profile  $profile
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Payment $payment)
+    public function update(Request $request, Profile $profile)
     {
         //
     }
@@ -92,12 +77,11 @@ class PaymentController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Payment  $payment
+     * @param  \App\Profile  $profile
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Payment $payment)
+    public function destroy(Profile $profile)
     {
-         $payment->delete();
-        return redirect()->route('payment.index');
+        //
     }
 }

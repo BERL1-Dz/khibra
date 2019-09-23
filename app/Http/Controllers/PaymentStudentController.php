@@ -6,6 +6,7 @@ use App\Payment;
 use App\Student;
 use App\Formation;
 use App\Professor;
+use App\Payment_Professor;
 use App\Payment_Student;
 use Illuminate\Http\Request;
 
@@ -57,9 +58,14 @@ class PaymentStudentController extends Controller
      * @param  \App\Payment_Student  $payment_Student
      * @return \Illuminate\Http\Response
      */
-    public function show(Payment_Student $payment_Student)
+    public function show($id)
     {
-        //
+         $payment = Payment_Student::all();
+        $formation = Formation::all();
+        $student = Student::all();
+        $payment_Student =Payment_Student::find($id);
+        return view('payment.show',compact('payment_Student','payment','student','formation'));
+
     }
 
     /**
@@ -68,9 +74,13 @@ class PaymentStudentController extends Controller
      * @param  \App\Payment_Student  $payment_Student
      * @return \Illuminate\Http\Response
      */
-    public function edit(Payment_Student $payment_Student)
+    public function edit($id)
     {
-        //
+        $payment = Payment_Student::all();
+        $formation = Formation::all();
+        $student = Student::all();
+        $payment_Student =Payment_Student::find($id);
+        return view('payment.edit',compact('payment_Student','payment','student','formation'));
     }
 
     /**
@@ -80,9 +90,17 @@ class PaymentStudentController extends Controller
      * @param  \App\Payment_Student  $payment_Student
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Payment_Student $payment_Student)
+    public function update($id)
     {
-        //
+        
+        $payment_Student->date =request('date');
+        $payment_Student->amount =request('amount');
+        $payment_Student->formation_id =request('formation_id');
+        $payment_Student->student_id =request('student_id');
+
+        $payment_Student->save();
+        return redirect()->route('payment.index');
+
     }
 
     /**
@@ -94,5 +112,7 @@ class PaymentStudentController extends Controller
     public function destroy(Payment_Student $payment_Student)
     {
         //
+         $payment_Student->delete();
+         return redirect()->route('payment.index');
     }
 }

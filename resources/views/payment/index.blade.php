@@ -34,27 +34,27 @@
         </thead>
         <tbody>
         </tbody>
-           @foreach($payments as $payment)
+           @foreach($salaries as $salary)
           <tr>
-            <th scope="row">{{$payment->id}}</th>
-            <td>{{$payment->date}}</td>
-            <td>@if(!empty($payment->formation))
-              {{$payment->formation->name}}
+            <th scope="row">{{$salary->id}}</th>
+            <td>{{$salary->date}}</td>
+            <td>@if(!empty($salary->formation))
+              {{$salary->formation->name}}
                   @endif
             </td>
-            <td>@if(!empty($payment->professor))
-              {{$payment->professor->name}}
+            <td>@if(!empty($salary->professor))
+              {{$salary->professor->name}}
               @endif
             </td>
-            <td>{{$payment->amount}}</td>
+            <td>{{$salary->amount}}</td>
               <td>
               <div class="row">
-          <a href="{{route('payment.edit', $payment->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>
+          <a href="#"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>
           </a>
 
-          <a href="{{route('payment.show', $payment->id)}}"  class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target="#show"><i class="fa fa-eye" aria-hidden="true"></i></a>
+          <a href="#"  class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target="#show"><i class="fa fa-eye" aria-hidden="true"></i></a>
 
-           <form method="POST" action="{{ route('payment.destroy', $payment->id) }}" style="float: left !important;display: contents;">
+           <form method="POST" action="#" style="float: left !important;display: contents;">
             @csrf 
            {{ method_field('DELETE') }}
            <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn btn-danger btn-bordred wave-light"><i class="fa fa-times"></i></button>
@@ -70,6 +70,7 @@
 
 </div>
 <br/>
+
 <!--Student table -->
 <div class="">
 	<div class="box">
@@ -104,21 +105,25 @@
         <tbody>
         </tbody>
 
-           @foreach($students as $student)
+           @foreach($payments as $payment)
           <tr>
-            <th scope="row">{{$student->id}}</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th scope="row">{{$payment->id}}</th>
+            <td>{{$payment->date}}</td>
+            <td>@if(!empty($payment->formation))
+              {{$payment->formation->name}}
+                  @endif</td>
+            <td>@if(!empty($payment->student))
+              {{$payment->student->lastname}}
+                  @endif</td>
+            <td>{{$payment->amount}}</td>
               <td>
               <div class="row">
-          <a href="#"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>
+          <a href="{{route('paymentstudent.edit',$payment->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>
           </a>
 
-          <a href="#"  class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target="#show"><i class="fa fa-eye" aria-hidden="true"></i></a>
+          <a href="{{route('paymentstudent.show',$payment->id)}}" class="btn btn-warning btn-bordred wave-light"><i class="fa fa-eye" aria-hidden="true"></i></a>
 
-           <form method="POST" action="#" style="float: left !important;display: contents;">
+           <form method="POST" action="{{route('paymentstudent.destroy',$payment->id)}}" style="float: left !important;display: contents;">
             @csrf 
            {{ method_field('DELETE') }}
            <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn btn-danger btn-bordred wave-light"><i class="fa fa-times"></i></button>
@@ -126,7 +131,7 @@
             </div>
           </td>
           </tr>
-          @endforeach  
+            @endforeach
         </table>
     	</div>
   	</div>

@@ -30,4 +30,6 @@ Route::resource('/seance','SeanceController');
 Route::resource('/paymentprof','PaymentProfessorController');
 Route::resource('/paymentstudent','PaymentStudentController');
 Route::resource('/presence','PresenceController');
+Route::resource('/profile','ProfileController');
+
 

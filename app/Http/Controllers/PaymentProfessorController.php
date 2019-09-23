@@ -6,6 +6,7 @@ use App\Professor;
 use App\Formation;
 use App\Payment;
 use App\Payment_Professor;
+use App\Payment_Student;
 use Illuminate\Http\Request;
 
 class PaymentProfessorController extends Controller
