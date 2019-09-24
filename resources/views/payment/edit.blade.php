@@ -12,16 +12,12 @@
       {{method_field('PATCH')}}
       @csrf
       Date:
-
-
        <br/>
       <input class="form-control" type="date" name="date">
       <br/>
       Amount:
-      
       <input  type="number"  value="{{$payment_Student->amount}}"  name="amount" 
       class="form-control">
-      
       <br/>
       Formation:
       <select class="form-control" name="formation_id">

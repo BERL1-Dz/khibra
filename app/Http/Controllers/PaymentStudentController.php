@@ -42,13 +42,13 @@ class PaymentStudentController extends Controller
     public function store(Request $request)
     {
         //dd($request->all());
-        $student_p = new Payment_Student;
-        $student_p->date =request('date');
-        $student_p->amount =request('amount');
-        $student_p->formation_id =request('formation_id');
-        $student_p->student_id =request('student_id');
+        $payment_Student = new Payment_Student;
+        $payment_Student->date =request('date');
+        $payment_Student->amount =request('amount');
+        $payment_Student->formation_id =request('formation_id');
+        $payment_Student->student_id =request('student_id');
 
-        $student_p->save();
+        $payment_Student->save();
         return back();
     }
 
@@ -90,15 +90,14 @@ class PaymentStudentController extends Controller
      * @param  \App\Payment_Student  $payment_Student
      * @return \Illuminate\Http\Response
      */
-    public function update($id)
+    public function update(Request $request, Payment_Student $paymentstudent)
     {
         
-        $payment_Student->date =request('date');
-        $payment_Student->amount =request('amount');
-        $payment_Student->formation_id =request('formation_id');
-        $payment_Student->student_id =request('student_id');
-
-        $payment_Student->save();
+        $paymentstudent->date =request('date');
+        $paymentstudent->amount =request('amount');
+        $paymentstudent->formation_id =request('formation_id');
+        $paymentstudent->student_id =request('student_id');
+        $paymentstudent->save();
         return redirect()->route('payment.index');
 
     }
@@ -109,10 +108,10 @@ class PaymentStudentController extends Controller
      * @param  \App\Payment_Student  $payment_Student
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Payment_Student $payment_Student)
+    public function destroy(Payment_Student $paymentstudent)
     {
         //
-         $payment_Student->delete();
+         $paymentstudent->delete();
          return redirect()->route('payment.index');
     }
 }
