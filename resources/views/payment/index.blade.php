@@ -49,10 +49,10 @@
             <td>{{$salary->amount}}</td>
               <td>
               <div class="row">
-          <a href="#"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>
+          <a href="{{route('paymentprof.edit',$salary->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>
           </a>
 
-          <a href="#"  class="btn btn-warning btn-bordred wave-light" data-toggle="modal" data-target="#show"><i class="fa fa-eye" aria-hidden="true"></i></a>
+          <a href="#" class="btn btn-warning btn-bordred wave-light"><i class="fa fa-eye" aria-hidden="true"></i></a>
 
            <form method="POST" action="#" style="float: left !important;display: contents;">
             @csrf 

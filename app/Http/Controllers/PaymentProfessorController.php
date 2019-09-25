@@ -58,7 +58,7 @@ class PaymentProfessorController extends Controller
      */
     public function show(Payment_Professor $payment_Professor)
     {
-        //
+        
     }
 
     /**
@@ -67,9 +67,13 @@ class PaymentProfessorController extends Controller
      * @param  \App\Payment_Professor  $payment_Professor
      * @return \Illuminate\Http\Response
      */
-    public function edit(Payment_Professor $payment_Professor)
+    public function edit($id)
     {
-        //
+        $salary = Payment_Professor::all();
+        $formation = Formation::all();
+        $professor = Professor::all();
+        $payment_Professor = Payment_Professor::find($id);
+        return view('payment.profedit',compact('salary','formation','professor','payment_Professor'));
     }
 
     /**
