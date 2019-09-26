@@ -18,9 +18,9 @@
       <br/>
       Student:
       <select class="form-control" name="student_id">
-             @foreach($students as $student)
+        @foreach($students as $student)
       	<option value="{{$student->id}}">{{$student->lastname}}</option>
-            @endforeach
+        @endforeach
       </select>
       <br/>
 </div>

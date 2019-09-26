@@ -24,7 +24,7 @@
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Seance</th>
+            <th scope="col">Class</th>
             <th scope="col">Student</th>
             <th scope="col">Presence</th>
             <th scope="col">Action </th>
@@ -34,14 +34,11 @@
           @foreach($presences as $presence)
           <tr>
             <th scope="row">{{$presence->id}}</th>
-            <td>{{$presence->Seance->date}}</td>
+            <td>{{$presence->seance->name}}</td>
             <td>{{$presence->Student->lastname}}</td>
             <td>{{$presence->presence}}</td>
             <td>
               <div class="row">
-          <a href="{{route('presence.edit', $presence->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>
-          </a>
-
           <a href="{{route('presence.show', $presence->id)}}"  class="btn btn-warning btn-bordred wave-light"><i class="fa fa-eye" aria-hidden="true"></i></a>
 
            <form method="POST" action="{{ route('presence.destroy', $presence->id) }}" style="float: left !important;display: contents;">

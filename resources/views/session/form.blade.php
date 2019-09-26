@@ -1,5 +1,7 @@
 <div>
-
+	<label>Name:</label>
+	<input type="text" class="form-control" name="name">
+	<br/>
 	 <label for=" ">Date start </label>
   	 <input type="date" class="form-control"  name="start_date" value="">
 

@@ -11,10 +11,14 @@
   	<form method="POST" enctype="multipart/form-data" action="{{ route('seance.update',$seance->id) }}" class="form-horizontal">
       {{method_field('PATCH')}}
       @csrf
-      Session:
+      
+  <label>Name:</label>
+  <input type="text" name="name" class="form-control" value="{{$seance->name}}">
+  <br/>
+  Session:
 	<select name="session_id" class="form-control">
 		@foreach($sessions as $session)
-		<option value="{{$session->id}}">{{$session->start_date}}</option>
+		<option value="{{$session->id}}">{{$session->name}}</option>
 		@endforeach
 	</select>
 	<br/>
@@ -26,7 +30,7 @@
 	</select>
 	<br/>
     Date:
-    <input type="date" name="date" class="form-control">
+    <input type="date" name="date" class="form-control" value="{{$seance->date}}">
      <br/>
     Duration:
     <input value="{{$seance->duration}}" type="number" name="duration" class="form-control">

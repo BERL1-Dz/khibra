@@ -1,8 +1,9 @@
 <div class="form-group">
-	Sceance:
+
+	Class:
 	<select class="form-control" name="seance_id">
 		@foreach($seances as $seance)
-		<option value="{{$seance->id}}">{{$seance->id}}</option>
+		<option value="{{$seance->id}}">{{$seance->name}}</option>
 		@endforeach
 	</select>
 	<br/>

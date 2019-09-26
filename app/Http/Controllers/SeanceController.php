@@ -43,6 +43,7 @@ class SeanceController extends Controller
         //dd($request->all());
 
         $seances =  new Seance;
+        $seances->name= request('name');
         $seances->session_id= request('session_id');
         $seances->classroom_id= request('classroom_id');
         $seances->date= request('date');
@@ -87,6 +88,7 @@ class SeanceController extends Controller
      */
     public function update(Request $request, Seance $seance)
     {
+        $seance->name= request('name');
         $seance->session_id= request('session_id');
         $seance->classroom_id= request('classroom_id');
         $seance->date= request('date');

@@ -10,7 +10,7 @@
 			<div class="row">
 			<div class="col-sm-4">
 				<div class="form-group">
-						<strong class="col-sm-4">Seance:</strong>{{$presence->seance->date}}
+						<strong class="col-sm-4">Class:</strong>{{$presence->seance->name}}
 				</div>
 				</div>
 

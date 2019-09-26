@@ -1,9 +1,11 @@
 <div class="form-group">
-	
+	<label>Name:</label>
+	<input type="text" class="form-control" name="name">
+	<br/>
 	Session:
 	<select name="session_id" class="form-control">
 		@foreach($sessions as $session)
-		<option value="{{$session->id}}">{{$session->start_date}}</option>
+		<option value="{{$session->id}}">{{$session->name}}</option>
 		@endforeach
 	</select>
 	<br/>

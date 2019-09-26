@@ -44,7 +44,7 @@ class SessionController extends Controller
     {
         //dd($request->all());
         $session = new Session();
-        
+        $session->name =request('name');
         $session->start_date =request('start_date');
         $session->end_date =request('end_date');
         $session->formation_id =request('formation_id');
@@ -92,6 +92,7 @@ class SessionController extends Controller
      */
     public function update(Request $request, Session $session)
     {
+        $session->name =request('name');
         $session->start_date =request('start_date');
         $session->end_date =request('end_date');
         $session->formation_id =request('formation_id');

@@ -137,7 +137,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('seance.index')}}">
-                        <i class="fas fa-book-open text-purple"></i>Seance
+                        <i class="fas fa-book-open text-purple"></i>Classes
                     </a>
                 </li>
                 <li class="nav-item">

@@ -22,6 +22,7 @@
         <thead>
           <tr>
             <th scope="col">#</th>
+            <th scope="col">Name</th>
             <th scope="col">Start</th>
             <th scope="col">End</th>
             <th scope="col">Students</th>
@@ -34,9 +35,10 @@
           @foreach($sessions as $session)
           <tr>
             <th scope="row">{{$session->id}}</th>
+            <td>{{$session->name}}</td>
             <td>{{$session->start_date}}</td>
             <td>{{$session->end_date}}</td>
-            <td>{{$session->nbr_max}}</td>
+            <td>#{{$session->nbr_max}}</td>
             <td>{{$session->formation->name}}</td>
             <td>{{$session->professor->name}}</td>
             <td>

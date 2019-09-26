@@ -12,7 +12,7 @@
 					<div class="row">
 						<div class="form-group">
 						<strong class="col-sm-2">Name:</strong>
-
+						{{$session->name}}
 						<br><br>
 						<strong class="col-sm-2">Start:</strong>{{$session->start_date}}
 						<br><br>

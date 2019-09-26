@@ -15,7 +15,7 @@ class CreatePaymentStudentsTable extends Migration
     {
         Schema::create('payment__students', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->dateTime('date');
+            $table->date('date');
             $table->double('amount');
             $table->integer('formation_id')->nullable();
             $table->integer('student_id')->unsigned();

@@ -11,12 +11,16 @@
 		<form method="POST" enctype="multipart/form-data" action="{{ route('session.update',$session->id) }}" class="form-horizontal">
 			{{method_field('PATCH')}}
 			@csrf
+			<label>Name</label>
+			<input type="text" class="form-control" name="name" value="{{$session->name}}">
+			<br/>
+			
 			<label for="">Date start </label>
-  	        <input type="date" class="form-control"  name="start_date" value="">
+  	        <input type="date" class="form-control"  name="start_date" value="{{$session->start_date}}">
 			<br/>
 
 			<label for=" ">date end </label>
-    		 <input type="date" class="form-control" name="end_date" value="">
+    		 <input type="date" class="form-control" name="end_date" value="{{$session->end_date}}">
     		 <br/>
     		 Formation:
 			<select class="form-control" name="formation_id">
@@ -28,7 +32,7 @@
 			Professor:
 			<select class="form-control" name="prof_id">
 			@foreach($professors as $professor)
-			<option selected="" value="{{$professor->id}}">{{$professor->name}}</option>
+			<option  value="{{$professor->id}}">{{$professor->name}}</option>
 			@endforeach
 			</select>
 			<br/>

@@ -3,7 +3,7 @@
 <div class="">
   <div class="box">
     <div class="box-header">
-      <h3 class="box-title">All Seances</h3>
+      <h3 class="box-title">All Classes</h3>
     </div>
     <br/>
     <div class="col-md-4 search">
@@ -22,8 +22,10 @@
         <thead>
           <tr>
             <th scope="col">#</th>
+            <th scope="col">Name</th>
             <th scope="col">Session</th>
             <th scope="col">Classroom</th>
+            <th scope="col">Duration</th>
             <th scope="col">Date</th>
             <th scope="col">Action </th>
           </tr>
@@ -32,8 +34,10 @@
           @foreach($seances as $seance)
           <tr>
             <th scope="row">{{$seance->id}}</th>
-            <td>{{$seance->session->start_date}}</td>
-            <td>{{$seance->classroom->name}}</td>
+            <th>{{$seance->name}}</th>
+            <td>{{$seance->session->name}}</td>
+            <td>{{$seance->classroom->name}}</</td>
+            <td>{{$seance->duration}}</td>
             <td>{{$seance->date}}</td>
             <td>
               <div class="row">
@@ -68,7 +72,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">New Seance</h4>
+        <h4 class="modal-title" id="myModalLabel">New Class</h4>
       </div>
         <form action="{{ route('seance.store')}}" method="post" enctype="multipart/form-data">
           @csrf
