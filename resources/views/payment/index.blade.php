@@ -52,9 +52,9 @@
           <a href="{{route('paymentprof.edit',$salary->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>
           </a>
 
-          <a href="#" class="btn btn-warning btn-bordred wave-light"><i class="fa fa-eye" aria-hidden="true"></i></a>
+          <a href="{{route('paymentprof.show',$salary->id)}}" class="btn btn-warning btn-bordred wave-light"><i class="fa fa-eye" aria-hidden="true"></i></a>
 
-           <form method="POST" action="#" style="float: left !important;display: contents;">
+           <form method="POST" action="{{route('paymentprof.destroy',$salary->id)}}" style="float: left !important;display: contents;">
             @csrf 
            {{ method_field('DELETE') }}
            <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn btn-danger btn-bordred wave-light"><i class="fa fa-times"></i></button>

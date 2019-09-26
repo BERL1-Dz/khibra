@@ -8,7 +8,7 @@
 
   </div>
   <div class="card-body">
-    <form method="POST" enctype="multipart/form-data" action="{{route('paymentprof.update',$salary->id)}}" class="form-horizontal">
+    <form method="POST" enctype="multipart/form-data" action="{{route('paymentprof.update',$payment_Professor)}}" class="form-horizontal">
       {{method_field('PATCH')}}
       @csrf
       Date:
@@ -22,7 +22,7 @@
       Formation:
       <select class="form-control" name="formation_id">
         @foreach($formation as $formation)
-        <option value="$formation->id">{{$formation->name}}</option>
+        <option value="{{$formation->id}}">{{$formation->name}}</option>
           @endforeach  
       </select>
       <br/>

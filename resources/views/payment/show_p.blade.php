@@ -12,16 +12,16 @@
 			<div class="col-xs-6 col-sm-6 col-md-6">
 				<div class="form-group">
 					<strong class="col-sm-2">Date:</strong>
-					
+					{{$payment_Professor->date}}
 					<br><br>
 					<strong class="col-sm-2">Formation:</strong>
-					
+					{{$payment_Professor->formation->name}}
 					<br><br>
 					<strong class="col-sm-2">Professor:</strong>
-					
+					{{$payment_Professor->professor->name}}
 					<br><br>
 					<strong class="col-sm-2">Amount:</strong>
-					
+					{{$payment_Professor->amount}}<b><i>DA</i></b>
 				</div>
 			</div>
 			</div>

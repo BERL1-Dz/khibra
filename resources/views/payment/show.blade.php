@@ -21,7 +21,7 @@
 					{{$payment_Student->student->lastname}}
 					<br><br>
 					<strong class="col-sm-2">Amount:</strong>
-					{{$payment_Student->amount}}
+					{{$payment_Student->amount}}<b><i>DA</i></b>
 				</div>
 			</div>
 			</div>

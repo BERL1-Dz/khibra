@@ -56,9 +56,13 @@ class PaymentProfessorController extends Controller
      * @param  \App\Payment_Professor  $payment_Professor
      * @return \Illuminate\Http\Response
      */
-    public function show(Payment_Professor $payment_Professor)
+    public function show($id)
     {
-        
+        $payment = Payment_Professor::all();
+        $formation = Formation::all();
+        $professor = Professor::all();
+        $payment_Professor = Payment_Professor::find($id);
+         return view('payment.show_p',compact('payment','formation','professor','payment_Professor'));
     }
 
     /**
@@ -83,9 +87,15 @@ class PaymentProfessorController extends Controller
      * @param  \App\Payment_Professor  $payment_Professor
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Payment_Professor $payment_Professor)
+    public function update(Request $request, Payment_Professor $paymentprof)
     {
-        //
+        //dd($request->all());
+        $paymentprof->date =request('date');
+        $paymentprof->amount =request('amount');
+        $paymentprof->formation_id =request('formation_id');
+        $paymentprof->professor_id =request('professor_id');
+        $paymentprof->save();
+        return redirect()->route('payment.index');
     }
 
     /**
@@ -94,8 +104,9 @@ class PaymentProfessorController extends Controller
      * @param  \App\Payment_Professor  $payment_Professor
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Payment_Professor $payment_Professor)
+    public function destroy(Payment_Professor $paymentprof)
     {
-        //
+        $paymentprof->delete();
+        return redirect()->route('payment.index');
     }
 }
