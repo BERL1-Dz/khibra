@@ -25,7 +25,7 @@ class CategoryController extends Controller
         $categories = DB::table('categories')->paginate(5);
         return view('category.index',compact('categories'));
        */
-        $categories = DB::table('categories')->paginate(5);
+        $categories = DB::table('categories')->paginate(4);
         //$categories = Category::all();
         return view('category.index',compact('categories'));
         

@@ -10,7 +10,7 @@
                         <h3 class="pt-2 mb-0 float-left">Alls Categories</h3>
                         <button type="button" class="btn btn-primary float-left" data-toggle="modal" data-target="#myModal">+</button>
                     </div>
-         <div class="col-md-4 search float-right">
+        <div class="col-md-4 search float-right">
       <form action="/search" method="GET">
         <div class="input-group">
           <input type="search" name="search" class="form-control">
@@ -38,7 +38,6 @@
             <th scope="row">{{$category->id}}</th>
             <td>{{$category->name}}</td>
             <td>{{$category->description}}</td>
-            <!--<td><img src="{{asset('storage/uploads/'.$category->image)}}" width="80px" height="80px"></td>-->
             <td>
               <div class="row">
           <a href="{{route('category.edit', $category->id)}}"class="btn btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i>
@@ -103,17 +102,6 @@
   </div>
 </div>
 
-<!--Show-->
-
-<div id="show" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      ...
-    </div>
-  </div>
-</div>
-
-
 @endsection
 <!-------------------------------------------BERLIN PART------------------------------------->
 
@@ -129,11 +117,11 @@
                         <button type="button" class="btn btn-primary float-left ml-3" data-toggle="modal" data-target="#exampleModal">+
                         </button>
                         <div class="float-right">
-                            <form class="navbar-search navbar-search-light form-inline mb-2 d-none d-md-flex ml-lg-auto float-right pl-3">
+                            <form action="/search" method="GET" class="navbar-search navbar-search-light form-inline mb-2 d-none d-md-flex ml-lg-auto float-right pl-3">
                                 <div class="form-group mb-0">
                                     <div class="input-group input-group-alternative">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                            <span class="input-group-text"><button type="submit" class="fas fa-search"></button></span>
                                         </div>
                                         <input class="form-control" placeholder="Search" type="text">
                                     </div>
@@ -215,29 +203,7 @@
                         </table>
                     </div>
                     <div class="card-footer py-4">
-                        <nav aria-label="...">
-                            <ul class="pagination justify-content-end mb-0">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1">
-                                        <i class="fas fa-angle-left"></i>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                </li>
-                                <li class="page-item active">
-                                    <a class="page-link" href="#">1</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">
-                                        <i class="fas fa-angle-right"></i>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <div class="links">{{$categories->links()}}</div>
                     </div>
                 </div>
             </div>
