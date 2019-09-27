@@ -96,7 +96,7 @@
             </form>
             <!-- Navigation -->
             <ul class="navbar-nav">
-                <li class="nav-item  class=" active" ">
+                <li class="nav-item">
                 <a class=" nav-link " href="{{url('home')}}"> <i class="ni ni-tv-2 text-primary"></i> Dashboard
                 </a>
                 </li>
@@ -116,7 +116,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  active " href="{{route('student.index')}}">
+                    <a class="nav-link " href="{{route('student.index')}}">
                         <i class="fas fa-user-graduate text-red"></i>Students
                     </a>
                 </li>

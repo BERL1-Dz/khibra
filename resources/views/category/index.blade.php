@@ -7,7 +7,7 @@
             <div class="card shadow">
                 <div class="box">
                     <div class="box-header d-flex">
-                        <h3 class="pt-2 mb-0 float-left">All Categories</h3>
+                        <h3 class="pt-2 mb-0 float-left">Alls Categories</h3>
                         <button type="button" class="btn btn-primary float-left" data-toggle="modal" data-target="#myModal">+</button>
                     </div>
          <div class="col-md-4 search float-right">
