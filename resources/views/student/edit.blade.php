@@ -27,7 +27,7 @@
         <br/>
         Birthday:
          <br/>
-       <input type="date" class="form-control" name="birthday">
+       <input type="date" class="form-control" name="birthday" value="{{$student->birthday}}">
         <br/>
 
       Phone:
@@ -36,16 +36,16 @@
       Grades:
       <select name="grade_levels" class="form-control">
             <option value="">Choose</option>
-            <option value="Bachelor">Bachelor</option>
-            <option value="Master">Master</option>
-            <option value="Doctorate">Doctorate</option>
+            <option @if($student->grade_levels =="Bachelor") selected @endif value="Bachelor">Bachelor</option> 
+            <option @if($student->grade_levels =="Master") selected @endif value="Master">Master</option>
+            <option @if($student->grade_levels =="Doctorate") selected @endif value="Doctorate">Doctorate</option>
       </select>
       <br/>
       Status:
       <select name="status" class="form-control">
             <option value="0">Choose</option>
-            <option value="Avaliable">Avaliable</option>
-            <option value="Unavaliable">Unavaliable</option>  
+            <option @if($student->status =="Avaliable") selected @endif value="Avaliable">Avaliable</option> 
+            <option @if($student->status =="Unavaliable") selected @endif value="Unavaliable">Unavaliable</option> 
       </select>
       <br/>
       <div class="card-footer">
