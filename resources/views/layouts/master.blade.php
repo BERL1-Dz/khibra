@@ -13,7 +13,7 @@
     <link href="../../master/assets/js/plugins/nucleo/css/nucleo.css" rel="stylesheet" />
     <link href="../../master/assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
     <!-- CSS Files -->
-    <link href="../../master/assets/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
+    <link href="../../master/assets/css/style.css" rel="stylesheet" />
 </head>
 <body>
 <!----------------------------NavBar---------------------------------->
@@ -66,7 +66,7 @@
             </li>
         </ul>
         <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main" style="background-image: linear-gradient(white , #172b4d);">
             <!-- Collapse header -->
             <div class="navbar-collapse-header d-md-none">
                 <div class="row">
