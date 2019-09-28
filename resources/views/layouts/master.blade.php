@@ -66,7 +66,7 @@
             </li>
         </ul>
         <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="sidenav-collapse-main" style="background-image: linear-gradient(white , #172b4d);">
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
             <!-- Collapse header -->
             <div class="navbar-collapse-header d-md-none">
                 <div class="row">
@@ -207,26 +207,28 @@
 
 <!-------------------------------------Footer----------------------------------------->
     <!-- Footer -->
-    <footer class="footer">
+
+    <footer class="footer" style="margin: 20px !important;width: auto;background: #f7fafc !important;padding: 2.5rem 0 !important;">
         <div class="row align-items-center justify-content-xl-between">
-            <div class="col-xl-6">
+            <div class="col-xl-6 ">
                 <div class="copyright text-center text-xl-left text-muted">
                     &copy; 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Khibra Academy</a>
                 </div>
             </div>
             <div class="col-xl-6">
-                <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+                <ul class="nav nav-footer justify-content-center float-right">
                     <li class="nav-item">
-                        <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Kessoum Mohamed</a>
+                        <a href="#" class="nav-link" target="_blank">Kessoum Mohamed</a>
                     </li>
                     <li class="nav-item">
-                        <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Addeche Kamel Chewki</a>
+                        <a href="#" class="nav-link" target="_blank">Addeche Kamel Chewki</a>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
 </div>
+
 <!----------------------------------------end Footer----------------------------------------->
 
    <!--   Core   -->

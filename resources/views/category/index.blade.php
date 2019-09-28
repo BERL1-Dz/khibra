@@ -121,7 +121,7 @@
                                 <div class="form-group mb-0">
                                     <div class="input-group input-group-alternative">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text"><button type="submit" class="fas fa-search"></button></span>
+                                            <span class="input-group-text"><button type="submit" class="fas fa-search" style="color: rgba(0, 0, 0, 0.6);background: #fff0;border-color: #fff0;cursor: pointer;"></button></span>
                                         </div>
                                         <input class="form-control" placeholder="Search" type="text">
                                     </div>
