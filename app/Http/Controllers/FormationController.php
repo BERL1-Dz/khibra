@@ -19,9 +19,9 @@ class FormationController extends Controller
     }
     public function index()
     {
-        $formations = Formation::all();
+        //$formations = Formation::all();
+        $formations = Formation::with('category')->paginate('4');
         $categories = Category::all();
-        //$formations = DB::table('formations');
         return view('formation.index',compact('categories','formations'));
     }
 

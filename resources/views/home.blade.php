@@ -88,6 +88,7 @@
         </div>
     </div>
 @endsection
+
 @section('main-content')
     <div class="container-fluid mt--7">
         <div class="row justify-content-center">
@@ -109,3 +110,4 @@
         </div>
     </div>
 @endsection
+

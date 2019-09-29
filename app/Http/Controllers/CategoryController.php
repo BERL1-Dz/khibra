@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use App\Category;
+use App\Formation;
 use Illuminate\Http\Request;
 
 
@@ -21,14 +22,8 @@ class CategoryController extends Controller
 
     public function index()
     {
-        /*$categories = Category::where('name','description','image')->paginate(4);
-        $categories = DB::table('categories')->paginate(5);
-        return view('category.index',compact('categories'));
-       */
         $categories = DB::table('categories')->paginate(4);
-        //$categories = Category::all();
         return view('category.index',compact('categories'));
-        
     }
 
     /**
@@ -41,16 +36,6 @@ class CategoryController extends Controller
         
     }
     
-    public function search(Request $request)
-    {
-        
-        $search = $request->get('search');
-        $categories = DB::table('categories')->where('name', 'like','%'.$search.'%')->paginate(4);
-        return view('category.index', ['categories' => $categories]);
-        
-    }
-    
-
     /**
      * Store a newly created resource in storage.
      *

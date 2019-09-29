@@ -8,7 +8,7 @@ class Category extends Model
 {
     function formations()
     	{
-    		return $this->hasMany("App\Formation");
+    		return $this->hasMany('App\Formation');
     	}
 
     protected $fillable =['name','description'];

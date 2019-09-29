@@ -5,10 +5,13 @@
   <div class="box">
     <div class="box-header">
       <h3 class="box-title">All Formations</h3>
+      <div class="col-md-4"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      Add New 
+</button></div>
     </div>
     <br/>
 
-    <!-- Search-->
+    <!-- Search
     <div class="col-md-4 search">
       <form action="/search" method="GET">
         <div class="input-group">
@@ -19,7 +22,7 @@
         </div>
       </form>
     </div>
-
+-->
     <div class="box-body">
       
             <table class="table">
@@ -63,9 +66,11 @@
     </div>
   </div>
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-  Add New 
-</button>
+
+
+<br/>
+
+<div class="links">{{$formations->links()}}</div>
 
 <!-- Add -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
