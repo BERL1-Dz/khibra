@@ -12,14 +12,7 @@
                     </div>
 
         <div class="col-md-4 search float-right">
-      <form action="/search" method="GET">
-        <div class="input-group">
-          <input type="search" name="search" class="form-control">
-          <span class="input-group-prepend">
-            <button type="submit" class="btn btn-primary bouton">Search</button>
-          </span>
-        </div>
-      </form>
+     
     </div>
     <div class="box-body">
 
@@ -118,17 +111,15 @@
                         <button type="button" class="btn btn-primary float-left ml-3" data-toggle="modal" data-target="#exampleModal">+
                         </button>
                         <div class="float-right">
-                            
-                            <form action="/search" method="GET" class="navbar-search navbar-search-light form-inline mb-2 d-none d-md-flex ml-lg-auto float-right pl-3">
-                                <div class="form-group mb-0">
-                                    <div class="input-group input-group-alternative">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><button type="submit" class="fas fa-search" style="color: rgba(0, 0, 0, 0.6);background: #fff0;border-color: #fff0;cursor: pointer;"></button></span>
-                                        </div>
-                                        <input class="form-control" placeholder="Search" type="text">
-                                    </div>
-                                </div>
-                            </form>
+                             <form action="/search" method="GET">
+        <div class="input-group">
+          <input type="search" name="search" class="form-control">
+          <span class="input-group-prepend">
+            <button type="submit" class="btn btn-primary bouton">Search</button>
+          </span>
+        </div>
+      </form>
+                        
                         </div>
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

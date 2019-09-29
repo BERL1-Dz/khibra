@@ -11,6 +11,7 @@
     </div>
     <br/>
     
+    
     <!-- Search -->
     <div class="col-md-4 search">
       <form action="/search" method="GET">
