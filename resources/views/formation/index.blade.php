@@ -119,7 +119,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><button type="submit" class="fas fa-search" style="color: rgba(0, 0, 0, 0.6);background: #fff0;border-color: #fff0;cursor: pointer;"></button></span>
                                             </div>
-                                            <input class="form-control" placeholder="Search" type="text">
+                                            <input class="form-control col-lg-6" placeholder="Search" type="text">
                                         </div>
                                     </div>
                                 </form>
