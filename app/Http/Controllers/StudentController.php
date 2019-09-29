@@ -1,8 +1,7 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Student;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
@@ -14,7 +13,7 @@ class StudentController extends Controller
      */
     public function index()
     {
-        $students = Student::all();
+        $students = DB::table('students')->paginate(4);
         return view('student.index',compact('students'));
     }
 

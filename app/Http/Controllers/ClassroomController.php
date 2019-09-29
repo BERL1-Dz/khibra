@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
 use App\Classroom;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class ClassroomController extends Controller
@@ -14,7 +14,7 @@ class ClassroomController extends Controller
      */
     public function index()
     {
-        $classrooms = DB::table('classrooms')->paginate(5);
+        $classrooms = DB::table('classrooms')->paginate(4);
         return view('classroom.index',compact('classrooms'));
     }
 

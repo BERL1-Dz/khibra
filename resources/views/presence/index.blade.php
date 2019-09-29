@@ -6,6 +6,11 @@
   <div class="box">
     <div class="box-header">
       <h3 class="box-title">All Presence</h3>
+      <div class="col-md-4">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add New
+        </button>
+      </div>
     </div>
     <br/>
     <div class="col-md-4 search">
@@ -18,6 +23,7 @@
         </div>
       </form>
     </div>
+    <br/>
     <div class="box-body">
       
             <table class="table">
@@ -56,12 +62,7 @@
   </div>
 </div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-  Add New 
-</button>
-
-
+<div class="links">{{$presences->links()}}</div>
 <!-- Add -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">

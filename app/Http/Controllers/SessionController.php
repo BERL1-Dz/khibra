@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
 use App\Professor;
 use App\Formation;
-use App\Student;
 use App\Session;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class SessionController extends Controller
@@ -19,9 +18,8 @@ class SessionController extends Controller
     {
         $formations = Formation::all();
         $professors = Professor::all();
-        $students = Student::all();
-        $sessions = Session::all();
-        return view('session.index', compact('sessions', 'students',      'formations','professors'));
+        $sessions = Session::with('formation','professor')->paginate('4');
+        return view('session.index', compact('sessions', 'formations','professors'));
     }
 
     /**

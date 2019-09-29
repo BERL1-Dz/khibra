@@ -4,6 +4,10 @@
   <div class="box">
     <div class="box-header">
       <h3 class="box-title">All Sessions</h3>
+      <div class="col-md-4">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add New  
+</button>
+      </div>
     </div>
     <br/>
     <div class="col-md-4 search">
@@ -63,13 +67,7 @@
   </div>
 </div>
 
-
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-  Add New 
-</button>
-
+<div class="links">{{$sessions->links()}}</div>
 <!-- Add -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">

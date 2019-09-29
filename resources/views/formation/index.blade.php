@@ -10,8 +10,8 @@
 </button></div>
     </div>
     <br/>
-
-    <!-- Search
+    
+    <!-- Search -->
     <div class="col-md-4 search">
       <form action="/search" method="GET">
         <div class="input-group">
@@ -22,7 +22,7 @@
         </div>
       </form>
     </div>
--->
+  
     <div class="box-body">
       
             <table class="table">
