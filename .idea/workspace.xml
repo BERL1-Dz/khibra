@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="294e259f-9e56-421d-a35c-70a31168174f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/formation/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/formation/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/formation/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/formation/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/formation/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/formation/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,25 +34,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/category/index.blade.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/formation/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="210" column="11" lean-forward="true" selection-start-line="105" selection-end-line="210" selection-end-column="11" />
+            <state relative-caret-position="319">
+              <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/formation/index.blade.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/category/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="184" column="70" selection-start-line="184" selection-start-column="70" selection-end-line="184" selection-end-column="70" />
-              <folding>
-                <element signature="e#4605#4693#0#HTML" expanded="true" />
-                <element signature="e#5744#5751#1#HTML" expanded="true" />
-                <element signature="e#9374#9423#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="423">
+              <caret line="86" column="11" lean-forward="true" selection-start-line="37" selection-end-line="86" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -61,7 +56,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>slide01</find>
       <find>slide05</find>
       <find>fullclip</find>
       <find>fullpage</find>
@@ -90,6 +84,8 @@
       <find>btn</find>
       <find>boot</find>
       <find>fas fa-search</find>
+      <find>category</find>
+      <find>search</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,6 +127,7 @@
         <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/formation/form.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/formation/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/formation/edit.blade.php" />
       </list>
     </option>
   </component>
@@ -336,7 +333,7 @@
       <workItem from="1569579190432" duration="387000" />
       <workItem from="1569579610713" duration="2429000" />
       <workItem from="1569656682425" duration="7164000" />
-      <workItem from="1569757967033" duration="852000" />
+      <workItem from="1569757967033" duration="2547000" />
     </task>
     <task id="LOCAL-00001" summary="new berlin">
       <created>1568044199263</created>
@@ -443,11 +440,18 @@
       <option name="project" value="LOCAL" />
       <updated>1569664033920</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Front-end Changes :(Fromation/index)">
+      <created>1569758929768</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1569758929768</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55640000" />
+    <option name="totallyTimeSpent" value="57335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -536,7 +540,8 @@
     <MESSAGE value="Front-end Fix Bugs" />
     <MESSAGE value="Front-end Changes :(Fix align elements/Change Colors/Edit.Blade.Php-C-F)" />
     <MESSAGE value="Front-end Changes :(Addons in Edit.Blade.Php-C-F)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Front-end Changes :(Addons in Edit.Blade.Php-C-F)" />
+    <MESSAGE value="Front-end Changes :(Fromation/index)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Front-end Changes :(Fromation/index)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -748,13 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/category/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1898">
-          <caret line="73" column="73" selection-start-line="73" selection-start-column="73" selection-end-line="73" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/formation/form.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
@@ -764,20 +762,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/category/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
+        <state relative-caret-position="567">
           <caret line="210" column="11" lean-forward="true" selection-start-line="105" selection-end-line="210" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/formation/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="184" column="70" selection-start-line="184" selection-start-column="70" selection-end-line="184" selection-end-column="70" />
+        <state relative-caret-position="400">
+          <caret line="123" column="43" lean-forward="true" selection-start-line="123" selection-start-column="43" selection-end-line="123" selection-end-column="43" />
           <folding>
-            <element signature="e#4605#4693#0#HTML" expanded="true" />
             <element signature="e#5744#5751#1#HTML" expanded="true" />
             <element signature="e#9374#9423#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/category/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="86" column="11" lean-forward="true" selection-start-line="37" selection-end-line="86" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/formation/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
         </state>
       </provider>
     </entry>

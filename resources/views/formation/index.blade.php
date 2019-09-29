@@ -112,7 +112,7 @@
                             <button type="button" class="btn btn-primary float-left ml-3" data-toggle="modal" data-target="#exampleModal">+
                             </button>
                             <div class="float-right">
-                                <form action="/search" method="GET" class="navbar-search navbar-search-light form-inline mb-2 d-none d-md-flex ml-lg-auto float-right pl-3">
+                                {{--<form action="/search" method="GET" class="navbar-search navbar-search-light form-inline mb-2 d-none d-md-flex ml-lg-auto float-right pl-3">
                                     <div class="form-group mb-0">
                                         <div class="input-group input-group-alternative">
                                             <div class="input-group-prepend">
@@ -121,7 +121,7 @@
                                             <input class="form-control" placeholder="Search" type="text">
                                         </div>
                                     </div>
-                                </form>
+                                </form>--}}
                             </div>
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
