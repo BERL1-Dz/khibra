@@ -113,20 +113,15 @@
                             <button type="button" class="btn btn-primary float-left ml-3" data-toggle="modal" data-target="#exampleModal">+
                             </button>
                             <div class="float-right">
+                                <form action="/search" method="GET" class="float-right pl-3">
 
-                                <form action="/search" method="GET" class="navbar-search navbar-search-light form-inline mb-2 d-none d-md-flex ml-lg-auto float-right pl-3">
-                                    <div class="form-group mb-0">
-                                        <div class="input-group input-group-alternative">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><button type="submit" class="fas fa-search" style="color: rgba(0, 0, 0, 0.6);background: #fff0;border-color: #fff0;cursor: pointer;"></button></span>
-                                            </div>
-                                            <input class="form-control col-lg-6" placeholder="Search" type="text">
+                                    <div class="input-group input-group-alternative">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" style="background-color: #5e72e4;border-color: #5e72e4;"><button type="submit" class="fas fa-search" style="color: rgba(255, 255, 255, 1);background: #fff0;border-color: #fff0;cursor: pointer;"></button></span>
                                         </div>
+                                        <input class="form-control p-2" type="search" placeholder="Search" name="search" style="border: 1px solid #e8e8e8;">
                                     </div>
                                 </form>
-
-
-
                             </div>
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -181,24 +176,20 @@
                                         <td>{{$formation->category->name}}</td>
                                         <td>{{$formation->durations}}</td>
 
-                                        <td class="text-right">
-                                            <div class="dropdown">
-                                                <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <i class="fas fa-ellipsis-v"></i>
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                                    <a href="{{route('formation.edit', $formation->id)}}">
-                                                        <button class="dropdown-item" ><i class="ni ni-settings-gear-65 text-yellow"></i> Edit</button></a>
-                                                    <form method="POST" action="{{ route('formation.destroy', $formation->id) }}" style="float: left !important;display: contents;">
-                                                        @csrf
-                                                        {{ method_field('DELETE') }}
-                                                        <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')"  class="dropdown-item"><i class="ni ni-scissors text-red"></i>Delete</button>
-                                                    </form>
-                                                </div>
-                                            </div>
+                                        <td class="align-items-center">
+                                            <a href="{{route('formation.edit', $formation->id)}}"class="btn btn-info btn-sm btn-bordred wave-light"> <i class="fas fa-edit"></i></a>
+                                            </a>
+
+                                            <a href="{{route('formation.show',$formation->id)}}" class="btn btn-warning btn-sm btn-bordred wave-light"><i class="fa fa-eye" aria-hidden="true"></i></a>
+
+                                            <form method="POST" action="{{ route('formation.destroy', $formation->id) }}" style="float: left !important;display: contents;">
+                                                @csrf
+                                                {{ method_field('DELETE') }}
+                                                <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn-sm btn btn-danger btn-bordred wave-light"><i class="fa fa-times"></i></button>
+                                            </form>
+                                            @endforeach
                                         </td>
                                     </tr>
-                                @endforeach
                                 </tbody>
                             </table>
                         </div>

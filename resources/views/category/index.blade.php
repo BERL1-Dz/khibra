@@ -111,14 +111,6 @@
                         <button type="button" class="btn btn-primary float-left ml-3" data-toggle="modal" data-target="#exampleModal">+
                         </button>
                         <div class="float-right">
-                             {{--<form action="/search" method="GET">
-                                <div class="input-group">
-                                  <input type="search" name="search" class="form-control">
-                                  <span class="input-group-prepend">
-                                    <button type="submit" class="btn btn-primary bouton">Search</button>
-                                  </span>
-                                </div>
-                              </form>--}}
                             <form action="/search" method="GET" class="float-right pl-3">
 
                                     <div class="input-group input-group-alternative">
@@ -127,7 +119,6 @@
                                         </div>
                                         <input class="form-control p-2" type="search" placeholder="Search" name="search" style="border: 1px solid #e8e8e8;">
                                     </div>
-
                             </form>
                         
                         </div>
@@ -164,7 +155,7 @@
                                 <th scope="col">Id</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Description</th>
-                                <th scope="col">Options</th>
+                                <th scope="col">Actions</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -184,21 +175,17 @@
                                         {{$category->description}}
                                     </td>
 
-                                    <td class="text-right">
-                                        <div class="dropdown">
-                                            <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fas fa-ellipsis-v"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                                <a href="{{route('category.edit', $category->id)}}">
-                                                <button class="dropdown-item" ><i class="ni ni-settings-gear-65 text-yellow"></i> Edit</button></a>
-                                                <form method="POST" action="{{ route('category.destroy', $category->id) }}" style="float: left !important;display: contents;">
-                                                    @csrf
-                                                    {{ method_field('DELETE') }}
-                                                <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')"  class="dropdown-item"><i class="ni ni-scissors text-red"></i>Delete</button>
-                                                </form>
-                                            </div>
-                                        </div>
+                                    <td class="align-items-center">
+                                        <a href="{{route('category.edit', $category->id)}}"class="btn btn-info btn-sm btn-bordred wave-light"> <i class="fas fa-edit"></i>
+                                        </a>
+
+                                        <a href="{{route('category.show', $category->id)}}"  class="btn btn-warning btn-sm btn-bordred wave-light" data-toggle="modal" data-target="#show"><i class="fa fa-eye" aria-hidden="true"></i></a>
+
+                                        <form method="POST" action="{{ route('category.destroy', $category->id) }}" style="float: left !important;display: contents;">
+                                            @csrf
+                                            {{ method_field('DELETE') }}
+                                            <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn btn-sm btn-danger btn-bordred wave-light"><i class="fa fa-times"></i></button>
+                                        </form>
                                     </td>
                                 </tr>
                             @endforeach
