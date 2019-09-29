@@ -208,7 +208,7 @@
 <!-------------------------------------Footer----------------------------------------->
     <!-- Footer -->
 
-    <footer class="footer" style="margin: 20px !important;width: auto;background: #f7fafc !important;padding: 2.5rem 0 !important;">
+    <footer class="footer" style="margin: 20px !important;width: auto;background: #d1d1d1 !important;padding: 2.5rem 0 !important;">
         <div class="row align-items-center justify-content-xl-between">
             <div class="col-xl-6 ">
                 <div class="copyright text-center text-xl-left text-muted">
