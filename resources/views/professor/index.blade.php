@@ -4,8 +4,13 @@
   <div class="box">
     <div class="box-header">
       <h3 class="box-title">All Proessors</h3>
+      <div class="col-md-4">
+<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal">
+  Add New 
+</button></div>
       </div>
          <br/>
+
     <div class="col-md-4 search">
       <form action="/search" method="GET">
         <div class="input-group">
@@ -16,7 +21,7 @@
         </div>
       </form>
     </div>
-
+    <br/>
 <div class="box-body">
 <table class="table">
   <thead>
@@ -59,11 +64,9 @@
 
 </div>
 </div>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal">
-  Add New 
-</button>
-
+<br/>
+<div class="links">{{$professors->links()}}</div>
+<br/>
 <!-- Add -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">

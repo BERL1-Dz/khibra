@@ -22,8 +22,8 @@ class PaymentController extends Controller
 
 
         $formations = Formation::all();
-        $salaries = Payment_Professor::all();
-        $payments = Payment_Student::all();
+        $salaries = Payment_Professor::with('formation','Professor')->paginate(3);
+        $payments = Payment_Student::with('Formation','Student')->paginate(3);
         $paymentprof = Payment_Professor::all();
 
             //merge two collections

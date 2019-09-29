@@ -10,6 +10,7 @@
                         <h3 class="pt-2 mb-0 float-left">Alls Categories</h3>
                         <button type="button" class="btn btn-primary float-left" data-toggle="modal" data-target="#myModal">+</button>
                     </div>
+
         <div class="col-md-4 search float-right">
       <form action="/search" method="GET">
         <div class="input-group">
@@ -117,6 +118,7 @@
                         <button type="button" class="btn btn-primary float-left ml-3" data-toggle="modal" data-target="#exampleModal">+
                         </button>
                         <div class="float-right">
+                            
                             <form action="/search" method="GET" class="navbar-search navbar-search-light form-inline mb-2 d-none d-md-flex ml-lg-auto float-right pl-3">
                                 <div class="form-group mb-0">
                                     <div class="input-group input-group-alternative">

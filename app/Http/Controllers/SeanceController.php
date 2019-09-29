@@ -16,9 +16,10 @@ class SeanceController extends Controller
      */
     public function index()
     {
-        $seances = Seance::all();
+        
         $sessions = Session::all();
         $classrooms = Classroom::all();
+        $seances = Seance::with('classroom','session')->paginate(3);
         return view('seance.index',compact('seances','sessions','classrooms'));
     }
 

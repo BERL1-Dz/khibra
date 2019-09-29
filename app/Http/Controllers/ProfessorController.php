@@ -17,7 +17,7 @@ class ProfessorController extends Controller
     {
         //return "ah shit! here we go again!";
         
-        $professors = Professor::all();
+        $professors = DB::table('professors')->paginate(4);
         return view('professor.index',compact('professors'));
         
     }

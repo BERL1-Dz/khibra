@@ -19,6 +19,7 @@
         </div>
       </form>
     	</div>
+      <br/>
     	<div class="box-body">
       
             <table class="table">
@@ -67,9 +68,10 @@
         </table>
     	</div>
   	</div>
-
+<div class="links">{{$salaries->links()}}</div>
 </div>
 <br/>
+
 
 <!--Student table -->
 <div class="">
@@ -89,9 +91,9 @@
         </div>
       </form>
     	</div>
+      <br/>
     	<div class="box-body">
-      
-            <table class="table">
+      <table class="table">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -135,7 +137,7 @@
         </table>
     	</div>
   	</div>
-
+<div class="links">{{$payments->links()}}</div>
 </div>
 
 <!-- Prof -->

@@ -17,7 +17,7 @@ class PresenceController extends Controller
     {
         $seances = Seance::all();
         $students = Student::all();
-        $presences = Presence::all();
+        $presences = Presence::with('student','seance')->paginate(4);
         return view('presence.index', compact('presences','students','seances'));
     }
 
