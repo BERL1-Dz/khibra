@@ -95,7 +95,7 @@
 
 <!-------------------------------------------BERLIN PART------------------------------------->
 
-@section('content')
+@section('content-')
     <div class="container-fluid mt--7">
         <!-- Table -->
         <div class="row">
