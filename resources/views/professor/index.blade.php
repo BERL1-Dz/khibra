@@ -148,8 +148,10 @@
                             <tr>
                                 <th scope="col">Id</th>
                                 <th scope="col">Name</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Email</th>
                                 <th scope="col">Description</th>
-                                <th scope="col">Options</th>
+                                <th scope="col">Action</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -165,9 +167,9 @@
                                     <td>
                                         {{$professor->name}}
                                     </td>
-                                    <td>
-                                        {{$professor->description}}
-                                    </td>
+                                    <td>{{$professor->phone_number}}</td>
+                                    <td>{{$professor->email}}</td>
+                                    <td>{{$professor->description}}</td>
 
                                     <td class="align-items-center">
                                         <a href="{{route('professor.edit', $professor->id)}}"class="btn btn-sm btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i></a>
