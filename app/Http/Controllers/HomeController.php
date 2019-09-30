@@ -1,7 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Category;
+use App\Professor;
+use App\Student;
+use App\Formation;
+use App\Classroom;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,7 +26,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $categories = Category::all();
-        return view('home' ,compact('categories'));
+        $classrooms = Classroom::all();
+        $professors = Professor::all();
+        $students = Student::all();
+        $formations = Formation::all();
+        return view('home' , compact('formations','students','professors','classrooms'));
     }
 }
