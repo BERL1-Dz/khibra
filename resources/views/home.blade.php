@@ -12,13 +12,12 @@
                         </div>
                         <div class="col-auto">
                             <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
-                                <i class="fas fa-chart-bar"></i>
+                                <i class="fas fa-folder"></i>
                             </div>
                         </div>
                     </div>
                     <p class="mt-3 mb-0 text-muted text-sm">
-                        <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                        <span class="text-nowrap">Since last month</span>
+                        <span class="text-nowrap"><a href="{{route('category.index')}}">See More</a></span>
                     </p>
                 </div>
             </div>
