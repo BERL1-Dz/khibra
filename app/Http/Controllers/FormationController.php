@@ -35,6 +35,15 @@ class FormationController extends Controller
         //
     }
 
+    public function search(Request $request)
+    {
+        
+        $search = $request->get('search');
+        $formations = DB::table('formations')->where('name', 'like','%'.$search.'%')->paginate(4);
+        return view('formation.index', ['formations' => $formations]);
+        
+    }
+
     /**
      * Store a newly created resource in storage.
      *

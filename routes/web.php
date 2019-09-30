@@ -18,7 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/search','CategoryController@search');
 Route::resource('/category','CategoryController');
 Route::resource('/formation','FormationController');
 Route::resource('/professor','ProfessorController');
@@ -32,4 +31,8 @@ Route::resource('/paymentstudent','PaymentStudentController');
 Route::resource('/presence','PresenceController');
 Route::resource('/profile','ProfileController');
 
-
+// ...Search Routes
+Route::get('/search','CategoryController@search');
+//Route::get('/search','FormationController@search');
+Route::get('/search','StudentController@search');
+Route::get('/search','ProfessorController@search');
