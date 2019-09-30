@@ -18,14 +18,13 @@
                         @csrf
                         <div class="pl-lg-4">
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-lg-12">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-username">Name</label>
                                         <input type="text" name="name" id="input-username" class="form-control form-control-alternative" value="{{$category->name}}">
                                     </div>
                                 </div>
                             </div>
-                        <hr class="my-4" />
                         <!-- Description -->
                         <div class="pl-lg-1">
                             <div class="form-group">
@@ -33,13 +32,8 @@
                                 <textarea rows="4" class="form-control form-control-alternative" name="description">{{$category->description}}</textarea>
                             </div>
                         </div>
-                            <div class="input-group">
-                                <div class="form-group" class="d-flex flex-colmun">
-                                    Add Image:
-                                    <input type="file" class="btn btn-sm btn-primary" name="image">
-                                </div>
-                            </div>
                         </div>
+                        <hr class="my-4" />
                         <div class="text-right">
                             <button type="submit" class="btn btn-primary">Save Changes</button>
                         </div>

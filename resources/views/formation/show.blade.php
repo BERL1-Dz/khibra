@@ -20,9 +20,6 @@
 					<strong class="col-sm-2">Duration:</strong>
 					{{$formation->durations}}
 					<br><br>
-					<strong class="col-sm-2">Image:</strong>
-					<img width="200px" height="100px" src="{{asset('storage/uploads/'.$formation->image
-                        )}}">
 					
 				</div>
 			</div>
