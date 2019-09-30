@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="294e259f-9e56-421d-a35c-70a31168174f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/formation/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/formation/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/professor/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/professor/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +38,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
+            <state relative-caret-position="5460">
               <caret line="210" column="89" selection-start-line="210" selection-start-column="83" selection-end-line="210" selection-end-column="89" />
             </state>
           </provider>
@@ -44,36 +47,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/category/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1449">
-              <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
-              <folding>
-                <element signature="e#1598#1647#0#HTML" expanded="true" />
-                <element signature="e#2760#2767#1#HTML" expanded="true" />
-                <element signature="e#4859#4920#0#HTML" expanded="true" />
-                <element signature="e#4903#4991#0#HTML" expanded="true" />
-                <element signature="e#5152#5187#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/formation/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
+            <state relative-caret-position="26">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/formation/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/professor/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="115" selection-start-line="115" selection-end-line="115" />
-              <folding>
-                <element signature="e#4630#4718#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="319">
+              <caret line="181" column="148" selection-start-line="181" selection-start-column="148" selection-end-line="181" selection-end-column="148" />
             </state>
           </provider>
         </entry>
@@ -150,11 +134,11 @@
         <option value="$PROJECT_DIR$/public/master/assets/js/plugins/bootstrap/dist/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/resources/views/formation/form.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/formation/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/professor/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/public/master/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/resources/views/category/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/formation/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/category/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/professor/index.blade.php" />
       </list>
     </option>
   </component>
@@ -282,7 +266,7 @@
               <item name="khibra-platfrom" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="formation" type="462c0819:PsiDirectoryNode" />
+              <item name="professor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -353,7 +337,9 @@
       <workItem from="1569579190432" duration="387000" />
       <workItem from="1569579610713" duration="2429000" />
       <workItem from="1569656682425" duration="7164000" />
-      <workItem from="1569757967033" duration="7534000" />
+      <workItem from="1569757967033" duration="9805000" />
+      <workItem from="1569774015215" duration="256000" />
+      <workItem from="1569833051255" duration="1416000" />
     </task>
     <task id="LOCAL-00001" summary="new berlin">
       <created>1568044199263</created>
@@ -509,17 +495,31 @@
       <option name="project" value="LOCAL" />
       <updated>1569767479889</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Front-end Changes :(Search)">
+      <created>1569767640456</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1569767640456</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Front-end Changes :(Many Changes)">
+      <created>1569768626277</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1569768626277</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62322000" />
+    <option name="totallyTimeSpent" value="66265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978261" visible="true" weight="0.2590604" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978261" weight="0.26644295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -531,11 +531,11 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4986577" weight="0.33529413" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49731544" weight="0.33529413" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4986577" weight="0.30588236" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5013423" side_tool="true" weight="0.33529413" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5026846" side_tool="true" weight="0.33529413" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -608,7 +608,8 @@
     <MESSAGE value="Front-end Changes :(Background 2)" />
     <MESSAGE value="Front-end Changes :(Update)" />
     <MESSAGE value="Front-end Changes :(Search)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Front-end Changes :(Search)" />
+    <MESSAGE value="Front-end Changes :(Many Changes)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Front-end Changes :(Many Changes)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -624,9 +625,9 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/formation/index.blade.php</url>
+          <url>file://$PROJECT_DIR$/resources/views/professor/index.blade.php</url>
           <line>28</line>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -720,20 +721,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -817,23 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="210" column="89" selection-start-line="210" selection-start-column="83" selection-end-line="210" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/professor/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2132">
-          <caret line="97" column="18" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
-          <folding>
-            <element signature="e#1679#1728#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/master/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="846">
@@ -848,27 +822,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/category/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1449">
-          <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
-          <folding>
-            <element signature="e#1598#1647#0#HTML" expanded="true" />
-            <element signature="e#2760#2767#1#HTML" expanded="true" />
-            <element signature="e#4859#4920#0#HTML" expanded="true" />
-            <element signature="e#4903#4991#0#HTML" expanded="true" />
-            <element signature="e#5152#5187#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="5460">
+          <caret line="210" column="89" selection-start-line="210" selection-start-column="83" selection-end-line="210" selection-end-column="89" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/formation/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-          <folding>
-            <element signature="e#4630#4718#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="26">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FormationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/category/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/professor/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="181" column="148" selection-start-line="181" selection-start-column="148" selection-end-line="181" selection-end-column="148" />
         </state>
       </provider>
     </entry>

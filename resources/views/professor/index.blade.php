@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('content')
+@section('content-')
 <div class="">
   <div class="box">
     <div class="box-header">
@@ -95,14 +95,14 @@
 
 <!-------------------------------------------BERLIN PART------------------------------------->
 
-@section('content-')
+@section('content')
     <div class="container-fluid mt--7">
         <!-- Table -->
         <div class="row">
             <div class="col">
                 <div class="card shadow">
                     <div class="card-header border-0">
-                        <h3 class="pt-2 mb-0 float-left">All Categories</h3>
+                        <h3 class="pt-2 mb-0 float-left">All Professors</h3>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary float-left ml-3" data-toggle="modal" data-target="#exampleModal">+
                         </button>
@@ -123,16 +123,16 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Add New Category</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Add New Professor</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <form action="{{ route('category.store')}}" method="post" enctype="multipart/form-data">
+                                    <form action="{{ route('professor.store')}}" method="post" enctype="multipart/form-data">
                                         {{csrf_field()}}
                                         <div class="modal-body">
                                             <div class="form-group">
-                                                @include('category.form')
+                                                @include('professor.form')
                                             </div>
                                         </div>
                                         <div class="modal-footer">
@@ -155,37 +155,32 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($categories as $category)
+                            @foreach($professors as $professor)
                                 <tr>
                                     <th scope="row">
 
                                         <div class="media-body">
-                                            <span class="mb-0 text-sm">{{$category->id}}</span>
+                                            <span class="mb-0 text-sm">{{$professor->id}}</span>
                                         </div>
 
                                     </th>
                                     <td>
-                                        {{$category->name}}
+                                        {{$professor->name}}
                                     </td>
                                     <td>
-                                        {{$category->description}}
+                                        {{$professor->description}}
                                     </td>
 
-                                    <td class="text-right">
-                                        <div class="dropdown">
-                                            <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fas fa-ellipsis-v"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                                <a href="{{route('category.edit', $category->id)}}">
-                                                    <button class="dropdown-item" ><i class="ni ni-settings-gear-65 text-yellow"></i> Edit</button></a>
-                                                <form method="POST" action="{{ route('category.destroy', $category->id) }}" style="float: left !important;display: contents;">
-                                                    @csrf
-                                                    {{ method_field('DELETE') }}
-                                                    <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')"  class="dropdown-item"><i class="ni ni-scissors text-red"></i>Delete</button>
-                                                </form>
-                                            </div>
-                                        </div>
+                                    <td class="align-items-center">
+                                        <a href="{{route('professor.edit', $professor->id)}}"class="btn btn-sm btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i></a>
+
+                                        <a href="{{route('professor.show', $professor->id)}}" class="btn btn-sm btn-warning btn-bordred wave-light"><i class="fa fa-eye" aria-hidden="true"></i></a>
+
+                                        <form method="POST" action="{{ route('professor.destroy', $professor->id) }}" style="float: left !important;display: contents;">
+                                            @csrf
+                                            {{ method_field('DELETE') }}
+                                            <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn-sm btn btn-danger btn-bordred wave-light"><i class="fa fa-times"></i></button>
+                                        </form>
                                     </td>
                                 </tr>
                             @endforeach
@@ -193,7 +188,7 @@
                         </table>
                     </div>
                     <div class="card-footer py-4">
-                        <div class="links">{{$categories->links()}}</div>
+                        <div class="links">{{$professors->links()}}</div>
                     </div>
                 </div>
             </div>
