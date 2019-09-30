@@ -53,12 +53,6 @@
                                     <textarea rows="4" class="form-control form-control-alternative" name="description">{{$professor->description}}</textarea>
                                 </div>
                             </div>
-                            <div class="input-group">
-                                <div class="form-group" class="d-flex flex-colmun">
-                                    Add Image:
-                                    <input type="file" class="btn btn-sm btn-primary" name="image">
-                                </div>
-                            </div>
                         </div>
                         <div class="text-right">
                             <button type="submit" class="btn btn-primary">Save Changes</button>

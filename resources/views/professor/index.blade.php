@@ -104,7 +104,7 @@
                     <div class="card-header border-0">
                         <h3 class="pt-2 mb-0 float-left">All Professors</h3>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary float-left ml-3" data-toggle="modal" data-target="#exampleModal">+
+                        <button type="button" class="btn btn-primary float-left ml-3" data-toggle="modal" data-target=".bd-example-modal-lg">+
                         </button>
                         <div class="float-right">
                                 <form action="/search" method="GET">
@@ -117,8 +117,8 @@
                          </form>
                         </div>
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
+                        <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel">Add New Professor</h5>
@@ -172,14 +172,14 @@
                                     <td>{{$professor->description}}</td>
 
                                     <td class="align-items-center">
-                                        <a href="{{route('professor.edit', $professor->id)}}"class="btn btn-sm btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i></a>
+                                        <a href="{{route('professor.edit', $professor->id)}}"class="btn btn-sm btn-light btn-bordred wave-light"> <i class="fas fa-edit"></i></a>
 
-                                        <a href="{{route('professor.show', $professor->id)}}" class="btn btn-sm btn-warning btn-bordred wave-light"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                        <a href="{{route('professor.show', $professor->id)}}" class="btn btn-sm btn-light btn-bordred wave-light"><i class="fa fa-eye" aria-hidden="true"></i></a>
 
                                         <form method="POST" action="{{ route('professor.destroy', $professor->id) }}" style="float: left !important;display: contents;">
                                             @csrf
                                             {{ method_field('DELETE') }}
-                                            <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn-sm btn btn-danger btn-bordred wave-light"><i class="fa fa-times"></i></button>
+                                            <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn-sm btn btn-light btn-bordred wave-light"><i class="fa fa-times"></i></button>
                                         </form>
                                     </td>
                                 </tr>
