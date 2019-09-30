@@ -27,13 +27,11 @@ class StudentController extends Controller
         //
     }
 
-      public function search(Request $request)
-    {
-        
+    public function search(Request $request)
+    {   
         $search = $request->get('search');
         $students = DB::table('students')->where('lastname', 'like','%'.$search.'%')->paginate(4);
-        return view('student.index', ['students' => $students]);
-        
+        return view('student.index', ['students' => $students]);  
     }
 
     /**
