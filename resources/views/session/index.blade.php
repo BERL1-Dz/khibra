@@ -80,7 +80,7 @@
                                     <td>{{$session->professor->name}}</td>
 
                                     <td class="align-items-center">
-                                        <a href="{{route('session.edit', $session->id)}}"class="btn btn-sm btn-light btn-bordred wave-light"> <i class="fas fa-edit"></i></a>
+                                        <a href="{{route('session.edit', $session->id)}}" class="btn btn-sm btn-light btn-bordred wave-light"> <i class="fas fa-edit"></i></a>
 
                                         <a href="{{route('session.show', $session->id)}}" class="btn btn-sm btn-light btn-bordred wave-light"><i class="fa fa-eye" aria-hidden="true"></i></a>
 
