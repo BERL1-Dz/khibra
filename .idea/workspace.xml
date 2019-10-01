@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="294e259f-9e56-421d-a35c-70a31168174f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/classroom/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/classroom/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/seance/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/seance/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/seance/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/seance/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/seance/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/seance/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/session/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/session/edit.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,28 +34,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/classroom/edit.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/presence/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" selection-start-line="1" selection-end-line="49" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/seance/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" selection-start-column="26" selection-end-column="26" />
+            <state relative-caret-position="137">
+              <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/seance/form.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/session/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+            <state relative-caret-position="446">
+              <caret line="64" column="120" selection-start-line="64" selection-start-column="120" selection-end-line="64" selection-end-column="120" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/category/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2106">
+              <caret line="81" column="162" selection-start-line="81" selection-start-column="162" selection-end-line="81" selection-end-column="162" />
             </state>
           </provider>
         </entry>
@@ -130,7 +127,6 @@
         <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/public/master/assets/css/style.css" />
         <option value="$PROJECT_DIR$/resources/views/formation/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/category/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/professor/form.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/professor/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/student/form.blade.php" />
@@ -152,7 +148,6 @@
         <option value="$PROJECT_DIR$/resources/views/seance/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/presence/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/session/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/session/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/payment/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/payment/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/payment/profedit.blade.php" />
@@ -161,6 +156,9 @@
         <option value="$PROJECT_DIR$/resources/views/formation/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/seance/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/seance/form.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/category/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/presence/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/session/edit.blade.php" />
       </list>
     </option>
   </component>
@@ -253,7 +251,7 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="885" />
     <option name="y" value="125" />
     <option name="width" value="1020" />
@@ -264,7 +262,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -288,26 +285,13 @@
               <item name="khibra-platfrom" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="classroom" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="khibra-platfrom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="khibra-platfrom" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="formation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="khibra-platfrom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="khibra-platfrom" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="seance" type="462c0819:PsiDirectoryNode" />
+              <item name="session" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -376,7 +360,8 @@
       <workItem from="1569757967033" duration="9805000" />
       <workItem from="1569774015215" duration="256000" />
       <workItem from="1569833051255" duration="13272000" />
-      <workItem from="1569918887434" duration="11697000" />
+      <workItem from="1569918887434" duration="13971000" />
+      <workItem from="1569939475853" duration="368000" />
     </task>
     <task id="LOCAL-00001" summary="new berlin">
       <created>1568044199263</created>
@@ -630,17 +615,38 @@
       <option name="project" value="LOCAL" />
       <updated>1569928191048</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Front-end Changes :(Seance/All)">
+      <created>1569936318333</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1569936318333</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Front-end Changes :(Presence/All)">
+      <created>1569936813097</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1569936813097</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Front-end Changes :(Presence/All + fix)">
+      <created>1569936942288</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1569936942288</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89818000" />
+    <option name="totallyTimeSpent" value="92460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978261" visible="true" weight="0.17718121" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978261" visible="true" weight="0.17986578" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -652,11 +658,11 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49731544" weight="0.33529413" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4966443" weight="0.33529413" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4986577" weight="0.30588236" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5026846" side_tool="true" weight="0.33529413" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49731544" weight="0.30588236" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5033557" side_tool="true" weight="0.33529413" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -711,9 +717,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New Edit Part Contact Us 2" />
-    <MESSAGE value="Align Button delete" />
-    <MESSAGE value="Align Button delete in all index's" />
     <MESSAGE value="Front-end Login/register" />
     <MESSAGE value="Fix Edit Page Fonts" />
     <MESSAGE value="Front-end Change" />
@@ -736,7 +739,10 @@
     <MESSAGE value="Front-end Changes :(Changes2)" />
     <MESSAGE value="Front-end Changes :(Session/All)" />
     <MESSAGE value="Front-end Changes :(Payments/All)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Front-end Changes :(Payments/All)" />
+    <MESSAGE value="Front-end Changes :(Seance/All)" />
+    <MESSAGE value="Front-end Changes :(Presence/All)" />
+    <MESSAGE value="Front-end Changes :(Presence/All + fix)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Front-end Changes :(Presence/All + fix)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -755,13 +761,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Web Dev Projects/Khibra Project/khibra-project Avance/resources/views/layouts/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="113" column="35" lean-forward="true" selection-start-line="113" selection-start-column="35" selection-end-line="113" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/master/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -910,13 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/category/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="49" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/student/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
@@ -1021,13 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/session/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="79" column="11" lean-forward="true" selection-start-line="2" selection-end-line="79" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/payment/student.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1092,8 +1077,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/seance/form.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
+        <state relative-caret-position="359">
           <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/presence/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/category/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2106">
+          <caret line="81" column="162" selection-start-line="81" selection-start-column="162" selection-end-line="81" selection-end-column="162" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/session/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="64" column="120" selection-start-line="64" selection-start-column="120" selection-end-line="64" selection-end-column="120" />
         </state>
       </provider>
     </entry>
