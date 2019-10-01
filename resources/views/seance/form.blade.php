@@ -22,7 +22,6 @@
       <input type="date" name="date" class="form-control">
       <br/>
      </form>
-     <br/>
     Duration:
     <input type="number" step="0.001" name="duration" class="form-control">
 </div>
