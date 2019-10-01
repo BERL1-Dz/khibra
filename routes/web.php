@@ -33,8 +33,8 @@ Route::resource('/profile','ProfileController');
 
 // ...Search Routes
 Route::get('/search','CategoryController@search');
-Route::get('/search','FormationController@search');
-Route::get('/search','StudentController@search');
-Route::get('/search','ProfessorController@search');
-Route::get('/search','StudentController@search');
-Route::get('/search','ClassroomController@search');
+//Route::get('/search','FormationController@search');
+//Route::get('/search','StudentController@search');
+//Route::get('/search','ProfessorController@search');
+//Route::get('/search','StudentController@search');
+//Route::get('/search','ClassroomController@search');
