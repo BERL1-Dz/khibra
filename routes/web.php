@@ -37,3 +37,4 @@ Route::get('/search','FormationController@search');
 Route::get('/search','StudentController@search');
 Route::get('/search','ProfessorController@search');
 Route::get('/search','StudentController@search');
+Route::get('/search','ClassroomController@search');
