@@ -62,7 +62,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-email">#Max</label>
-                                        <input class="form-control form-control-alternative" type="number" name="number" value="{{$session->nbr_max}}">
+                                        <input class="form-control form-control-alternative" type="number" name="nbr_max" value="{{$session->nbr_max}}">
                                     </div>
                                 </div>
                             </div>
