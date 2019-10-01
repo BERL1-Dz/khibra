@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-<div class="container-fluid">
+<div class="container-fluid mt--7">
 	<div class="card mb-3">	
 		<div class="card-header">
 	<h3><i class="fas fa-fw fa-user-graduate"></i>  View Student</h3>
@@ -57,7 +57,7 @@
 	</div>
 </div>
 <br>
-       <div class="col-md-2 col-xs-2 col1 center-block"> 
+       <div class="col-md-2 col-xs-2 col1 center-block ml-6">
           <a href="{{route('student.index')}}"><button class="btn btn-success center-block"><i class="fas fa-sign-out-alt"></i> return to Student lists </button></a>
         </div>
 @endsection 

@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
- <div class="container-fluid">
+ <div class="container-fluid mt--7">
  	<div class="card mb-3">
  		<div class="card-header">
 			<h3><i class="fas fa-fw fa-coins"></i>View Payments</h3>
@@ -29,7 +29,7 @@
  	</div>	
  </div>
 
- <div class="col-md-2 col-xs-2 col1 center-block"> 
+ <div class="col-md-2 col-xs-2 col1 center-block ml-6">
           <a href="{{route('payment.index')}}"><button class="btn btn-success center-block"><i class="fas fa-sign-out-alt"></i> return to Payment lists</button></a>
         </div>
 @endsection
