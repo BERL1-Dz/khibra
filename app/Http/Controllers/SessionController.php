@@ -75,6 +75,7 @@ class SessionController extends Controller
      */
     public function edit(Session $session)
     {
+
         $professors = Professor::all();
         $formations = Formation::all();
         $session = Session::find($session->id);
@@ -90,6 +91,7 @@ class SessionController extends Controller
      */
     public function update(Request $request, Session $session)
     {
+        //dd($request->all());
         $session->name =request('name');
         $session->start_date =request('start_date');
         $session->end_date =request('end_date');

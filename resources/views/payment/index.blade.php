@@ -206,7 +206,6 @@
             <div class="col">
                 <div class="card shadow">
                     <div class="card-header border-0">
-                        <h3 class="pt-2 mb-0 float-left">Payments Prof</h3>
                         <!-- Button trigger modal -->
                         <a href="#" id="btn" class="btn  btn-sm btn-warning float-left ml-3 mt-1" data-toggle="modal" data-target="#Prof"> <i class="fas fa-fw fa-chalkboard-teacher"></i> Professor Payment</a>
                         <div class="float-right">
@@ -310,7 +309,6 @@
             <div class="col">
                 <div class="card shadow">
                     <div class="card-header border-0">
-                        <h3 class="pt-2 mb-0 float-left">Payments Stud</h3>
                         <!-- Button trigger modal -->
                         <a href="#" class="btn  btn-sm btn-primary float-left ml-3 mt-1" data-toggle="modal" data-target="#Student"> <i class="fas fa-fw fa-user-graduate"></i>Student Payment</a>
                         <div class="float-right">
