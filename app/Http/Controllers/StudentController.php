@@ -29,9 +29,17 @@ class StudentController extends Controller
 
     public function search(Request $request)
     {   
-        $search = $request->get('search');
-        $students = DB::table('students')->where('lastname', 'like','%'.$search.'%')->paginate(4);
-        return view('student.index', ['students' => $students]);  
+
+    $search_student = $request->get('search_student');
+    if($search_student){
+    $students = DB::table('students')->where('lastname', 
+    'like','%'.$search_student.'%')->paginate(4);
+    } else { 
+    $students = Student::all(); 
+    }
+     return view('student.index', ['students' => 
+     $students]); 
+
     }
 
     /**

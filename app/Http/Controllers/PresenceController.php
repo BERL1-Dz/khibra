@@ -31,6 +31,28 @@ class PresenceController extends Controller
         //
     }
 
+    public function search(Request $request)
+
+    {   
+    $search_presence = $request->get('search_presence');
+    if($search_presence){
+    $seances = Seance::all();
+    $students = Student::all();
+    $presences = Presence::with('student','seance')->where('presence', 
+    'like','%'.$search_presence.'%')->paginate(4);
+    } else {
+
+    $seances = Seance::all();
+    $students = Student::all();    
+    $presences = Presence::all(); 
+
+    }
+     return view('presence.index',['presences' => 
+     $presences,'seances' =>$seances,'students' =>$students]); 
+
+
+    }
+
     /**
      * Store a newly created resource in storage.
      *

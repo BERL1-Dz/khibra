@@ -32,6 +32,24 @@ class SessionController extends Controller
         //
     }
 
+ public function search(Request $request)
+{   
+    $formations = Formation::all();
+    $professors = Professor::all();
+
+    $search_session = $request->get('search_session');
+    if($search_session){
+    $sessions = Session::with('formation','professor')->where('name', 
+    'like','%'.$search_session.'%')->paginate(4);
+    } else { 
+    $formations = Formation::all();
+    $professors = Professor::all();    
+    $sessions = Session::all(); 
+    }
+     return view('session.index', ['sessions' => 
+     $sessions,'formations' =>$formations,'professors' =>$professors]); 
+}
+
     /**
      * Store a newly created resource in storage.
      *

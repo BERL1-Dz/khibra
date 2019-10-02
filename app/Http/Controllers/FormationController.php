@@ -35,14 +35,21 @@ class FormationController extends Controller
         //
     }
 
-    public function search(Request $request)
-    {
-        
-        $search = $request->get('search');
-        $formations = DB::table('formations')->where('name', 'like','%'.$search.'%')->paginate(4);
-        return view('formation.index', ['formations' => $formations]);
-        
+ public function search(Request $request)
+{ 
+   //dd($request->all());
+     $search_formation = $request->get('search_formation');
+    if($search_formation){
+    $categories = Category::all();
+    $formations = Formation::with('category')->where('name', 
+    'like','%'.$search_formation.'%')->paginate(4);
+    } else { 
+    $formations = Formation::all();
+    $categories = Category::all(); 
     }
+     return view('formation.index', ['formations' => 
+     $formations,'categories' => $categories]); 
+}
 
     /**
      * Store a newly created resource in storage.

@@ -1,13 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Payment;
 use App\Student;
 use App\Payment_Professor;
 use App\Payment_Student;
 use App\Formation;
 use App\Professor;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class PaymentController extends Controller
@@ -40,6 +40,11 @@ class PaymentController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
+    {
+        //
+    }
+
+    public function search()
     {
         //
     }

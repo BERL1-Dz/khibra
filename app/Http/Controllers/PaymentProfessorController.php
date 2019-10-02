@@ -7,6 +7,7 @@ use App\Formation;
 use App\Payment;
 use App\Payment_Professor;
 use App\Payment_Student;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class PaymentProfessorController extends Controller
@@ -28,6 +29,11 @@ class PaymentProfessorController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
+    {
+        //
+    }
+
+    public function search()
     {
         //
     }

@@ -33,6 +33,28 @@ class SeanceController extends Controller
         //
     }
 
+     
+    public function search(Request $request)
+
+    {   
+
+    $search_seance = $request->get('search_seance');
+    if($search_seance){
+    $classrooms = Classroom::all();
+    $sessions = Session::all();
+    $seances = Seance::with('classroom','session')->where('name', 
+    'like','%'.$search_seance.'%')->paginate(4);
+    } else { 
+    $seances = Seance::all();
+    $classrooms = Classroom::all();
+    $sessions = Session::all(); 
+    }
+     return view('seance.index', ['seances' => 
+     $seances,'classrooms'=> $classrooms,'sessions'=>$sessions]); 
+
+
+    }
+
     /**
      * Store a newly created resource in storage.
      *

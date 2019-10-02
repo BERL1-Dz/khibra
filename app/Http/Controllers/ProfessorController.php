@@ -32,12 +32,19 @@ class ProfessorController extends Controller
         //
     }
 
-    public function search(Request $request)
-    {   
-        $search = $request->get('search');
-        $professors = DB::table('professors')->where('name', 'like','%'.$search.'%')->paginate(4);
-        return view('professor.index', ['professors' => $professors]);  
-    }
+	     public function search(Request $request)
+	{   
+	    $search = $request->get('search');
+	    if($search){
+	    $professors = DB::table('professors')->where('name', 
+	    'like','%'.$search.'%')->paginate(4);
+	    } else { 
+	    $professors = Professor::all(); 
+	    }
+	     return view('professor.index', ['professors' => 
+	     $professors]); 
+
+	}
 
     /**
      * Store a newly created resource in storage.

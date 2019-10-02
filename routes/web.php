@@ -32,9 +32,12 @@ Route::resource('/presence','PresenceController');
 Route::resource('/profile','ProfileController');
 
 // ...Search Routes
-Route::get('/search','CategoryController@search');
-//Route::get('/search','FormationController@search');
-//Route::get('/search','StudentController@search');
-//Route::get('/search','ProfessorController@search');
-//Route::get('/search','StudentController@search');
-//Route::get('/search','ClassroomController@search');
+Route::get('/search_category','CategoryController@search');
+Route::get('/search_student','StudentController@search');
+Route::get('/search','ProfessorController@search');
+Route::get('/search_calss','ClassroomController@search');
+Route::get('/search_session','SessionController@search');
+Route::get('/search_formation','FormationController@search');
+Route::get('/search_seance','SeanceController@search');
+Route::get('/search_presence','PresenceController@search');
+//Route::get('/search_ppayment','PaymentProfessorController@search');

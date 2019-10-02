@@ -36,14 +36,23 @@ class CategoryController extends Controller
         
     }
 
-      public function search(Request $request)
-    {
-        
-        $search = $request->get('search');
-        $categories = DB::table('categories')->where('name', 'like','%'.$search.'%')->paginate(4);
-        return view('category.index', ['categories' => $categories]);
-        
+ public function search(Request $request)
+{  
+    
+    //dd($request->all());
+     
+    $search_category = $request->get('search_category');
+    if($search_category){
+    $categories = DB::table('categories')->where('name', 
+    'like','%'.$search_category.'%')->paginate(4);
+    } else { 
+    $categories = Category::all(); 
     }
+     return view('category.index', ['categories' => 
+     $categories]); 
+
+
+}
     
     /**
      * Store a newly created resource in storage.

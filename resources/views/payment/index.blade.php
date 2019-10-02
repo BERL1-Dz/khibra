@@ -209,9 +209,9 @@
                         <!-- Button trigger modal -->
                         <a href="#" id="btn" class="btn  btn-sm btn-warning float-left ml-3 mt-1" data-toggle="modal" data-target="#Prof"> <i class="fas fa-fw fa-chalkboard-teacher"></i> Professor Payment</a>
                         <div class="float-right">
-                            <form action="/search" method="GET">
+                            <form action="/search_ppayment" method="GET">
                                 <div class="input-group">
-                                    <input type="search" name="search" class="form-control">
+                                    <input type="search" name="search_ppayment" class="form-control">
                                     <span class="input-group-prepend">
                           <button type="submit" class="btn btn-primary bouton">Search</button>
                              </span>

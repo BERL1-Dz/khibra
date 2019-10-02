@@ -28,14 +28,20 @@ class ClassroomController extends Controller
         //
     }
 
-       public function search(Request $request)
-    {
-        
-        $search = $request->get('search');
-        $classrooms = DB::table('classrooms')->where('name', 'like','%'.$search.'%')->paginate(4);
-        return view('classroom.index', ['classrooms' => $classrooms]);
-        
+ public function search(Request $request)
+{   
+    $search_calss = $request->get('search_calss');
+    if($search_calss){
+    $classrooms = DB::table('classrooms')->where('name', 
+    'like','%'.$search_calss.'%')->paginate(4);
+    } else { 
+    $classrooms = Classroom::all(); 
     }
+     return view('classroom.index', ['classrooms' => 
+     $classrooms]); 
+
+
+}
 
     /**
      * Store a newly created resource in storage.

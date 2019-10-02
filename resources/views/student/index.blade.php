@@ -13,9 +13,9 @@
                         <button type="button" class="btn btn-primary float-left ml-3" data-toggle="modal" data-target=".bd-example-modal-lg">+
                         </button>
                         <div class="float-right">
-                            <form action="/search" method="GET">
+                            <form action="/search_student" method="GET">
                                 <div class="input-group">
-                                    <input type="search" name="search" class="form-control">
+                                    <input type="search" name="search_student" class="form-control">
                                     <span class="input-group-prepend">
                           <button type="submit" class="btn btn-primary bouton">Search</button>
                              </span>
