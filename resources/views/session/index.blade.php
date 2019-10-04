@@ -13,14 +13,15 @@
                         <button type="button" class="btn btn-primary float-left ml-3" data-toggle="modal" data-target=".bd-example-modal-lg">+
                         </button>
                         <div class="float-right">
-                            <form action="/search_session" method="GET">
-                                <div class="input-group">
-                                    <input type="search" name="search_session" class="form-control">
-                                    <span class="input-group-prepend">
-                          <button type="submit" class="btn btn-primary bouton">Search</button>
-                             </span>
-                                </div>
-                            </form>
+<form action="/search_session" method="GET" class="float-right pl-3">
+
+<div class="input-group input-group-alternative">
+<div class="input-group-prepend">
+<span class="input-group-text" style="background-color: #5e72e4;border-color: #5e72e4;"><button type="submit" class="fas fa-search" style="color: rgba(255, 255, 255, 1);background: #fff0;border-color: #fff0;cursor: pointer;"></button></span>
+</div>
+<input class="form-control p-2" type="search" placeholder="Search" name="search_session" style="border: 1px solid #e8e8e8;">
+</div>
+</form> 
                         </div>
                         <!-- Modal -->
                         <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

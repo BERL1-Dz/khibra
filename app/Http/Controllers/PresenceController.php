@@ -33,7 +33,8 @@ class PresenceController extends Controller
 
     public function search(Request $request)
 
-    {   
+    {
+
     $search_presence = $request->get('search_presence');
     if($search_presence){
     $seances = Seance::all();
@@ -49,8 +50,6 @@ class PresenceController extends Controller
     }
      return view('presence.index',['presences' => 
      $presences,'seances' =>$seances,'students' =>$students]); 
-
-
     }
 
     /**

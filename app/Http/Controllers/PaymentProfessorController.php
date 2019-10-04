@@ -33,9 +33,23 @@ class PaymentProfessorController extends Controller
         //
     }
 
-    public function search()
+    public function search(Request $request)
     {
-        //
+    $search_ppayment = $request->get('search_ppayment');
+    if($search_ppayment){
+    $formations = Formation::all();
+    $professors = Professor::all();
+    $salaries = Payment_Professor::with('formation','professor')->where('id', 
+    'like','%'.$search_ppayment.'%')->paginate(4);
+    } else {
+
+    $formations = Formation::all();
+    $professors = Professor::all();   
+    $salaries = Payment_Professor::all(); 
+
+    }
+     return view('payment.index',['salaries' => 
+     $salaries,'formations' =>$formations,'formations' =>$formations]); 
     }
 
     /**
