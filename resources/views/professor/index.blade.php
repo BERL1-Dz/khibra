@@ -77,14 +77,14 @@
                                     <td>{{$professor->description}}</td>
 
                                     <td class="align-items-center">
-                                        <a href="{{route('professor.edit', $professor->id)}}"class="btn btn-sm btn-light btn-bordred wave-light"> <i class="fas fa-edit"></i></a>
+                                        <a href="{{route('professor.edit', $professor->id)}}"class="btn btn-sm btn-info btn-bordred wave-light"> <i class="fas fa-edit"></i></a>
 
-                                        <a href="{{route('professor.show', $professor->id)}}" class="btn btn-sm btn-light btn-bordred wave-light"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                        <a href="{{route('professor.show', $professor->id)}}" class="btn btn-sm btn-warning btn-bordred wave-light"><i class="fa fa-eye" aria-hidden="true"></i></a>
 
                                         <form method="POST" action="{{ route('professor.destroy', $professor->id) }}" style="float: left !important;display: contents;">
                                             @csrf
                                             {{ method_field('DELETE') }}
-                                            <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn-sm btn btn-light btn-bordred wave-light"><i class="fa fa-times"></i></button>
+                                            <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn-sm btn btn-danger btn-bordred wave-light"><i class="fa fa-times"></i></button>
                                         </form>
                                     </td>
                                 </tr>

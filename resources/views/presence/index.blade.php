@@ -74,13 +74,13 @@
                                     <td>{{$presence->presence}}</td>
 
                                     <td class="align-items-center">
-                                        <a href="{{route('presence.show', $presence->id)}}"class="btn btn-light btn-sm btn-bordred wave-light"> <i class="fa fa-eye"></i>
+                                        <a href="{{route('presence.show', $presence->id)}}"class="btn btn-warning btn-sm btn-bordred wave-light"> <i class="fa fa-eye"></i>
                                         </a>
 
                                         <form method="POST" action="{{ route('presence.destroy', $presence->id) }}" style="float: left !important;display: contents;">
                                             @csrf
                                             {{ method_field('DELETE') }}
-                                            <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn btn-sm btn-light btn-bordred wave-light"><i class="fa fa-times"></i></button>
+                                            <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn btn-sm btn-danger btn-bordred wave-light"><i class="fa fa-times"></i></button>
                                         </form>
                                     </td>
                                 </tr>

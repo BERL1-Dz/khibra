@@ -107,8 +107,13 @@ figure {
     margin-top: -20px;
     padding-left:20px;
     position: absolute;
-    width: 170px;
-    height: 150px;
+    width: 12%;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    .logo {
+        visibility: hidden;
+    }
 }
 .fullBackground{
     background-position: center center;

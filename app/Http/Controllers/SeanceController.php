@@ -129,6 +129,7 @@ class SeanceController extends Controller
      */
     public function destroy(Seance $seance)
     {
-        
+        $seance->delete();
+        return redirect()->route('seance.index');
     }
 }

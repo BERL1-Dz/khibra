@@ -31,16 +31,16 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <form action="{{ route('seance.store')}}" method="post" enctype="multipart/form-data">
+                                    <form action="{{route('seance.store')}}" method="post" enctype="multipart/form-data">
                                         {{csrf_field()}}
                                         <div class="modal-body">
                                             <div class="form-group">
                                                 @include('seance.form')
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="submit" class="btn btn-primary">Save changes</button>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="submit" class="btn btn-primary">Save changes</button>
                                         </div>
                                     </form>
                                 </div>
@@ -77,15 +77,15 @@
                                     <td>{{$seance->date}}</td>
 
                                     <td class="align-items-center">
-                                        <a href="{{route('seance.edit', $seance->id)}}"class="btn btn-light btn-sm btn-bordred wave-light"> <i class="fas fa-edit"></i></a>
+                                        <a href="{{route('seance.edit', $seance->id)}}"class="btn btn-info btn-sm btn-bordred wave-light"> <i class="fas fa-edit"></i></a>
                                         </a>
 
-                                        <a href="{{route('seance.show',$seance->id)}}" class="btn btn-light btn-sm btn-bordred wave-light"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                        <a href="{{route('seance.show',$seance->id)}}" class="btn btn-warning btn-sm btn-bordred wave-light"><i class="fa fa-eye" aria-hidden="true"></i></a>
 
                                         <form method="POST" action="{{ route('seance.destroy', $seance->id) }}" style="float: left !important;display: contents;">
                                             @csrf
                                             {{ method_field('DELETE') }}
-                                            <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn-sm btn btn-light btn-bordred wave-light"><i class="fa fa-times"></i></button>
+                                            <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn-sm btn btn-danger btn-bordred wave-light"><i class="fa fa-times"></i></button>
                                         </form>
                                         @endforeach
                                     </td>
