@@ -72,7 +72,7 @@
                                         </th>
                                         <td>{{$formation->name}}</td>
                                         <td>{{$formation->price}}</td>
-                                        <td>{{$formation->category_id}}</td>
+                                        <td>{{$formation->category->name}}</td>
                                         <td>{{$formation->durations}}</td>
 
                                         <td class="align-items-center">
