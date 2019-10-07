@@ -1,5 +1,4 @@
 @extends('layouts.master')
-<!-------------------------------------------BERLIN PART------------------------------------->
 
     @section('content')
         <div class="container-fluid mt--7">
@@ -73,7 +72,7 @@
                                         </th>
                                         <td>{{$formation->name}}</td>
                                         <td>{{$formation->price}}</td>
-                                        <td>{{$formation->category->name}}</td>
+                                        <td>{{$formation->category_id}}</td>
                                         <td>{{$formation->durations}}</td>
 
                                         <td class="align-items-center">

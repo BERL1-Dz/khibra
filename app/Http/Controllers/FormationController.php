@@ -19,6 +19,7 @@ class FormationController extends Controller
     }
     public function index()
     {
+        
         //$formations = Formation::all();
         $formations = Formation::with('category')->paginate('4');
         $categories = Category::all();
@@ -36,7 +37,8 @@ class FormationController extends Controller
     }
 
  public function search(Request $request)
-{ 
+{
+    
    //dd($request->all());
      $search_formation = $request->get('search_formation');
     if($search_formation){
@@ -48,7 +50,8 @@ class FormationController extends Controller
     $categories = Category::all(); 
     }
      return view('formation.index', ['formations' => 
-     $formations,'categories' => $categories]); 
+     $formations,'categories' => $categories]);
+     
 }
 
     /**
