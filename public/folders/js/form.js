@@ -26,7 +26,7 @@ $(function() {
 			$(formMessages).addClass('bg-success');
 
 			// Set the message text.
-			$(formMessages).text('Your message successfully sent');
+			$(formMessages).text('Your message will be replied with the next 24h');
 
 			// Clear the form.
 			$('#name, #email, #message').val('');			

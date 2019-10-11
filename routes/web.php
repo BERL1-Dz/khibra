@@ -30,6 +30,8 @@ Route::resource('/paymentprof','PaymentProfessorController');
 Route::resource('/paymentstudent','PaymentStudentController');
 Route::resource('/presence','PresenceController');
 Route::resource('/profile','ProfileController');
+Route::resource('/message','MessageController');
+//Route::post('submit', 'MessageController@store')->name('submit');
 
 // ...Search Routes
 Route::get('/search_category','CategoryController@search');

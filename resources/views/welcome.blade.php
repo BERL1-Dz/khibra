@@ -296,19 +296,22 @@
                                 </div>
                             </div>
                             <div class="col-md-6 animate" data-animate="fadeInUp">
-                                <form id="ajax-contact" method="post" action="#">
-                                    <div class="input-field">
-                                        <input type="text" class="form-control" name="name" id="nom" required placeholder="Nom">
-                                    </div>
-                                    <div class="input-field">
-                                        <input type="email" class="form-control" name="email" id="email" required placeholder="E-mail">
-                                    </div>
-                                    <div class="input-field">
-                                        <textarea class="form-control" name="message" id="message" required placeholder="Message"></textarea>
-                                    </div>
-                                    <button class="btn" type="submit">Soumettre</button>
-                                </form>
-                                <div id="form-messages" class="mt-3"></div>
+        <form action="{{route('message.store')}}" id="ajax-contact" method="POST" enctype="multipart/form-data">
+            	{{csrf_field()}}
+                <div class="input-field">
+                    <input type="text" class="form-control" name="name" id="nom" placeholder="Nom">
+                </div>
+                <div class="input-field">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="input-field">
+                    <textarea class="form-control" name="messages" id="message" placeholder="Message"></textarea>
+                </div>
+                <button class="btn" type="submit">Soumettre</button>
+            </form>
+                                <div id="form-messages" class="mt-3">
+                                	
+                                </div>
                             </div>
                         </div>
                     </div>
