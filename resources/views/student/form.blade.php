@@ -2,11 +2,11 @@
       <div class="row">
           <div class="col-md-6 ml-auto">
           Firstname:
-      <input type="text" name="firstname" class="form-control" placeholder="" />
+      <input type="text" name="firstname" class="form-control" placeholder="" required/>
           </div>
           <div class="col-md-6 ml-auto">
       Lastname:
-      <input type="text" name="lastname" class="form-control" placeholder="" />
+      <input type="text" name="lastname" class="form-control" placeholder="" required/>
           </div>
       </div>
       <br/>
@@ -22,14 +22,14 @@
               </div>
               <div class="col-md-6 ml-auto">
        Birthday:
-      <input class="form-control" type="date" name="birthday">
+      <input class="form-control" type="date" name="birthday" required>
               </div>
           </div>
       <br/>
       <div class="row">
           <div class="col-md-6 ml-auto">
       Phone:
-    <input type="tel" name="phone" class="form-control" placeholder="" />
+    <input type="tel" name="phone" class="form-control" placeholder="" required/>
           </div>
           <div class="col-md-6 ml-auto">
       Grades:

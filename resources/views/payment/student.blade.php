@@ -2,12 +2,12 @@
 	
        Date:
        <br/>
-      <input class="form-control" type="date" name="date">
+      <input class="form-control" type="date" name="date" required>
       <br/>
       </form>
       <br/>
       Amount:
-      <input type="number" name="amount" class="form-control">
+      <input type="number" name="amount" class="form-control" required>
       <br/>
       Formation:
       <select class="form-control" name="formation_id">

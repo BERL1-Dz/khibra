@@ -1,6 +1,6 @@
 <div class="form-group">
 	<label>Name:</label>
-	<input type="text" class="form-control" name="name">
+	<input type="text" class="form-control" name="name" required>
 	<br/>
 	Session:
 	<select name="session_id" class="form-control">
@@ -19,9 +19,9 @@
 	<form class="form-group">
     Date:
       <br/>
-      <input type="date" name="date" class="form-control">
+      <input type="date" name="date" class="form-control" required>
       <br/>
      </form>
     Duration:
-    <input type="number" step="0.001" name="duration" class="form-control">
+    <input type="number" step="0.001" name="duration" class="form-control" required>
 </div>

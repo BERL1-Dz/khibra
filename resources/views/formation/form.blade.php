@@ -9,13 +9,13 @@
                 </select>
               </br>
                 Name:
-                <input type="text" name="name" id="name" class="form-control" placeholder="" />
+                <input type="text" name="name" id="name" class="form-control" placeholder="" required />
                 <br/>
                 Price:
-                <input type="number" min="0.01" step="0.01" max="5000" name="price" id="price" class="form-control">
+                <input type="number" min="0.01" step="0.01" max="5000" name="price" id="price" class="form-control" required>
                 <br/>
                 Durations:
-                <input type="number" name="durations" class="form-control" id="durations">
+                <input type="number" name="durations" class="form-control" id="durations" required>
 
 
 

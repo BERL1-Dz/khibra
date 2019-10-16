@@ -2,18 +2,18 @@
     <div class="row">
         <div class="col-md-6 ml-auto">
 	<label>Name:</label>
-	<input type="text" class="form-control" name="name">
+	<input type="text" class="form-control" name="name" required>
         </div>
         <div class="col-md-6 ml-auto">
 	 <label for=" ">Date start </label>
-  	 <input type="date" class="form-control"  name="start_date" value="">
+  	 <input type="date" class="form-control"  name="start_date" value="" required>
         </div>
     </div>
     <br/>
     <div class="row">
         <div class="col-md-6 ml-auto">
      <label for=" ">date end </label>
-     <input type="date" class="form-control" name="end_date" value="">
+     <input type="date" class="form-control" name="end_date" value="" required>
         </div>
         <div class="col-md-6 ml-auto">
 	Formation:
@@ -36,7 +36,7 @@
       </div>
       <div class="col-md-6 ml-auto">
 	# Max:
-	<input class="form-control" type="number" name="nbr_max"  value="">
+	<input class="form-control" type="number" name="nbr_max"  value="" required>
       </div>
   </div>
 </div>
