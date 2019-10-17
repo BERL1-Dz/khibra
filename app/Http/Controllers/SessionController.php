@@ -130,6 +130,7 @@ class SessionController extends Controller
      */
     public function destroy(Session $session)
     {
-       
+        $session->delete();
+        return redirect()->route('session.index');  
     }
 }
