@@ -79,7 +79,7 @@
                                     </td>
 
                                     <td class="align-items-center">
-                                        <a href="{{route('category.edit', $category->id)}}"class="btn btn-info btn-sm btn-bordred wave-light"> <i class="fa fa-eye"></i>
+                                        <a href="{{route('category.edit', $category->id)}}"class="btn btn-info btn-sm btn-bordred wave-light"> <i class="fas fa-edit"></i>
                                         </a>
 
                                         <form method="POST" action="{{ route('category.destroy', $category->id) }}" style="float: left !important;display: contents;">

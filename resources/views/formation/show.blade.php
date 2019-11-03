@@ -17,8 +17,11 @@
 					<strong class="col-sm-2">Category:</strong>
 					{{$formation->category->name}}
 					<br><br>
+					<strong class="col-sm-2">Price:</strong>
+					{{$formation->price}} DA
+					<br><br>
 					<strong class="col-sm-2">Duration:</strong>
-					{{$formation->durations}}
+					{{$formation->durations}} Months
 					<br><br>
 					
 				</div>
