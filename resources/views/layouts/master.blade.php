@@ -145,6 +145,11 @@
                         <i class="fas fa-user-check text-green"></i>Presence
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('message.index')}}">
+                        <i class="fas fa-envelope text-yellow"></i>Message
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

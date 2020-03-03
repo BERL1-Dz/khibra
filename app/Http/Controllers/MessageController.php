@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
 use App\Message;
 use Illuminate\Http\Request;
 
@@ -15,6 +15,8 @@ class MessageController extends Controller
     public function index()
     {
         //
+        $message = DB::table('messages')->paginate(4);
+        return view('message.index',compact('message'));
     }
 
     /**
