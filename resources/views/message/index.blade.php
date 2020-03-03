@@ -7,13 +7,13 @@
                 <div class="card shadow">
                     <div class="card-header border-0">
                         <div class="float-right">
-                            <form action="/search_presence" method="GET" class="float-right pl-3">
+                            <form action="/search_message" method="GET" class="float-right pl-3">
 
                                 <div class="input-group input-group-alternative">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text" style="background-color: #5e72e4;border-color: #5e72e4;"><button type="submit" class="fas fa-search" style="color: rgba(255, 255, 255, 1);background: #fff0;border-color: #fff0;cursor: pointer;"></button></span>
                                     </div>
-                                    <input class="form-control p-2" type="search" placeholder="Search" name="search_presence" style="border: 1px solid #e8e8e8;">
+                                    <input class="form-control p-2" type="search" placeholder="Search" name="search_message" style="border: 1px solid #e8e8e8;">
                                 </div>
                             </form>
 
@@ -58,9 +58,9 @@
                                     <td>{{$message->messages}}</td>
                             
                                     <td class="align-items-center">
-                                        <a href=""class="btn btn-warning btn-sm btn-bordred wave-light"> <i class="fa fa-eye"></i>
+                                        <a href="{{route('message.show', $message->id)}}"class="btn btn-warning btn-sm btn-bordred wave-light"> <i class="fa fa-eye"></i>
                                         </a>
-                                        <form method="POST" action="" style="float: left !important;display: contents;">
+                                        <form method="POST" action="{{ route('message.destroy', $message->id) }}" style="float: left !important;display: contents;">
                                             @csrf
                                             {{ method_field('DELETE') }}
                                             <button type="submit" id="sa-remove" onclick="return confirm('Are you sure?')" class="wave-effect btn btn-sm btn-danger btn-bordred wave-light"><i class="fa fa-times"></i></button>
@@ -72,7 +72,8 @@
                         </table>
                     </div>
                     <div class="card-footer py-4">
-                        
+                            
+                            
                     </div>
                 </div>
             </div>

@@ -19,6 +19,22 @@ class MessageController extends Controller
         return view('message.index',compact('message'));
     }
 
+     public function search(Request $request)
+{  
+    
+    //dd($request->all());
+     
+    $search_message = $request->get('search_message');
+    if($search_message){$messages = DB::table('messages')->where('name', 'like','%'.$search_message.'%')->paginate(4);
+    } else { 
+    $messages = Message::all(); 
+    }
+     return view('message.index', ['messages' => 
+     $messages]); 
+
+
+}
+
     /**
      * Show the form for creating a new resource.
      *
@@ -57,6 +73,8 @@ class MessageController extends Controller
     public function show(Message $message)
     {
         //
+        $message =  Message::find($message->id);
+       return view('message.show',compact('message'));
     }
 
     /**
@@ -91,5 +109,7 @@ class MessageController extends Controller
     public function destroy(Message $message)
     {
         //
+        $message->delete();
+        return redirect()->route('message.index');
     }
 }

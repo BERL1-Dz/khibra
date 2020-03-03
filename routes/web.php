@@ -42,4 +42,5 @@ Route::get('/search_session','SessionController@search');
 Route::get('/search_formation','FormationController@search');
 Route::get('/search_seance','SeanceController@search');
 Route::get('/search_presence','PresenceController@search');
+Route::get('/search_message','MessageController@search');
 //Route::get('/search_ppayment','PaymentProfessorController@search');
