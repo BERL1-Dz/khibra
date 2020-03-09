@@ -73,7 +73,7 @@
                                         <td>{{$formation->name}}</td>
                                         <td>{{$formation->price}} DA</td>
                                         <td>{{$formation->category->name}}</td>
-                                        <td>{{$formation->durations}} Mois</td>
+                                        <td>{{$formation->durations}} Months</td>
 
                                         <td class="align-items-center">
                                             <a href="{{route('formation.edit', $formation->id)}}"class="btn btn-info btn-sm btn-bordred wave-light"> <i class="fas fa-edit"></i></a>

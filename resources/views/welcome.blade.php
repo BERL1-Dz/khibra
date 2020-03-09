@@ -329,7 +329,6 @@
         </ul>
     </div>
 </div>
-
 <script>
     $('.fullBackground').fullClip({
         images: ['folders/images/header_background.jpg', 'folders/images/header_background3.jpg', '/folders/images/header_background2.jpg'],
