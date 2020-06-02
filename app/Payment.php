@@ -11,7 +11,7 @@ class Payment extends Model
     }
 
     function Payment_Student(){
-    	return $this->hasMany("App\Payment_Student","student_id")
+    	return $this->hasMany("App\Payment_Student","student_id");
     }
 
     function Professor(){
