@@ -119,7 +119,7 @@ figure {
 
 @media screen and (max-width: 414px) {
   .logo {
-    display: none;
+    visibility: hidden;
   }
 }
 
