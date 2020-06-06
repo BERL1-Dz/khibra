@@ -110,11 +110,19 @@ figure {
     width: 12%;
     height: auto;
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1366px) {
     .logo {
-        visibility: hidden;
+      width: 8%;
     }
 }
+
+@media screen and (max-width: 414px) {
+  .logo {
+    display: none;
+  }
+}
+
 .fullBackground{
     background-position: center center;
     background-attachment: fixed;

@@ -52,9 +52,9 @@
     <header id="header">
         <div class="container-fluid">
             <div class="navbar">
-                <a href="#" id="logo"  title="Elegance by TemplateMo">
+                <div id="logo">
                     <img src="folders/images/logok.png" class="logo" style="">
-                </a>
+                </div>
                 <div class="navigation-row">
                     <nav id="navigation">
                         <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
